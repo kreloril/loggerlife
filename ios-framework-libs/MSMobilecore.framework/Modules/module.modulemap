@@ -1,0 +1,6 @@
+framework module MSMobilecore {
+  umbrella header "MSMobilecore.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dbService</key>
+	<array>
+		<dict>
+			<key>dbModelClass</key>
+			<string>cmskeys</string>
+			<key>dbQueryCreate</key>
+			<string></string>
+			<key>dbQuerySelect</key>
+			<array>
+				<string>select value from cmskeys where key = &apos;{$1}&apos; and lang = &apos;{$2}&apos;</string>
+			</array>
+			<key>dbQueryDelete</key>
+			<array/>
+			<key>dbQueryUpdate</key>
+			<array/>
+			<key>dbQueryInsert</key>
+			<array/>
+			<key>dbQueryAlter</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

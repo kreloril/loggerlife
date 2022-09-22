@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		020EF7C320AFC94900C529AE /* Target */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 020EF7C420AFC94900C529AE /* Build configuration list for PBXAggregateTarget "Target" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = Target;
+			productName = Target;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		020EF7AD20AFA57D00C529AE /* MSMobilecore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020EF7A320AFA57D00C529AE /* MSMobilecore.framework */; };
+		020EF7B220AFA57D00C529AE /* TestsMSSychronizedMutableDict.m in Sources */ = {isa = PBXBuildFile; fileRef = 020EF7B120AFA57D00C529AE /* TestsMSSychronizedMutableDict.m */; };
+		020EF7B420AFA57D00C529AE /* MSMobilecore.h in Headers */ = {isa = PBXBuildFile; fileRef = 020EF7A620AFA57D00C529AE /* MSMobilecore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		020EF7C120AFC30400C529AE /* MSSychronizedMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 020EF7BF20AFC30400C529AE /* MSSychronizedMutableDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		020EF7C220AFC30400C529AE /* MSSychronizedMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 020EF7C020AFC30400C529AE /* MSSychronizedMutableDictionary.m */; };
+		020EF7C920AFC97E00C529AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020EF7C820AFC97E00C529AE /* Foundation.framework */; };
+		020EF7CB20AFC98400C529AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020EF7CA20AFC98400C529AE /* UIKit.framework */; };
+		023185CB21E5C44000DE2F72 /* MSMobileCoreTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 023185C921E5C44000DE2F72 /* MSMobileCoreTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		023185CC21E5C44000DE2F72 /* MSMobileCoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 023185CA21E5C44000DE2F72 /* MSMobileCoreTableViewCell.m */; };
+		0231B7DC21D803C60058694B /* MSMobileCoreBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0231B7DA21D803C60058694B /* MSMobileCoreBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0231B7DD21D803C60058694B /* MSMobileCoreBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0231B7DB21D803C60058694B /* MSMobileCoreBaseViewController.m */; };
+		02585B7821B3BAFF00AC1ACF /* MSMobileCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 02585B7721B3BAFF00AC1ACF /* MSMobileCore.m */; };
+		02585B7A21B3BFF700AC1ACF /* MSMobileCoreResourceDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 02585B7921B3BFF700AC1ACF /* MSMobileCoreResourceDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02585B8421B8CCA200AC1ACF /* MSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 02585B8221B8CCA200AC1ACF /* MSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02585B8521B8CCA200AC1ACF /* MSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 02585B8321B8CCA200AC1ACF /* MSLogger.m */; };
+		02585B8821BBA2F700AC1ACF /* MSAESEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 02585B8621BBA2F700AC1ACF /* MSAESEncryptor.h */; };
+		02585B8921BBA2F700AC1ACF /* MSAESEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 02585B8721BBA2F700AC1ACF /* MSAESEncryptor.m */; };
+		02585B8B21BBA37400AC1ACF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02585B8A21BBA37400AC1ACF /* Security.framework */; };
+		02585B8D21BBA38C00AC1ACF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02585B8C21BBA38C00AC1ACF /* CFNetwork.framework */; };
+		02585B8F21BBA3A900AC1ACF /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02585B8E21BBA3A900AC1ACF /* CoreText.framework */; };
+		02585B9121BBA3E300AC1ACF /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 02585B9021BBA3E300AC1ACF /* libsqlite3.0.tbd */; };
+		02585B9521BC383700AC1ACF /* MSDatabaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 02585B9321BC383700AC1ACF /* MSDatabaseManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02585B9621BC383700AC1ACF /* MSDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02585B9421BC383700AC1ACF /* MSDatabaseManager.m */; };
+		02585B9921BC386800AC1ACF /* MSDatabaseService.h in Headers */ = {isa = PBXBuildFile; fileRef = 02585B9721BC386800AC1ACF /* MSDatabaseService.h */; };
+		02585B9A21BC386800AC1ACF /* MSDatabaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 02585B9821BC386800AC1ACF /* MSDatabaseService.m */; };
+		02585B9E21BC38AD00AC1ACF /* MSDBQueryResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 02585B9C21BC38AD00AC1ACF /* MSDBQueryResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02585B9F21BC38AD00AC1ACF /* MSDBQueryResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 02585B9D21BC38AD00AC1ACF /* MSDBQueryResponse.m */; };
+		02585BA221BC38E900AC1ACF /* MSDBQueryBuild.h in Headers */ = {isa = PBXBuildFile; fileRef = 02585BA021BC38E900AC1ACF /* MSDBQueryBuild.h */; };
+		02585BA321BC38E900AC1ACF /* MSDBQueryBuild.m in Sources */ = {isa = PBXBuildFile; fileRef = 02585BA121BC38E900AC1ACF /* MSDBQueryBuild.m */; };
+		0260D4C421D823AD00BBDE9D /* MSMobleCoreTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0260D4C221D823AD00BBDE9D /* MSMobleCoreTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0260D4C521D823AD00BBDE9D /* MSMobleCoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4C321D823AD00BBDE9D /* MSMobleCoreTableViewController.m */; };
+		0260D4CA21D8251400BBDE9D /* MSTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0260D4C821D8251400BBDE9D /* MSTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0260D4CB21D8251400BBDE9D /* MSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4C921D8251400BBDE9D /* MSTableView.m */; };
+		02AD830A20B24F2E009AB9C3 /* MSObjectStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 02AD830820B24F2E009AB9C3 /* MSObjectStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02AD830B20B24F2E009AB9C3 /* MSObjectStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AD830920B24F2E009AB9C3 /* MSObjectStack.m */; };
+		02C9846C231B70D700B9869E /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C98463231B70D700B9869E /* MMDrawerVisualState.m */; };
+		02C9846D231B70D700B9869E /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C98464231B70D700B9869E /* UIViewController+MMDrawerController.m */; };
+		02C9846E231B70D700B9869E /* UIViewController+MMDrawerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 02C98465231B70D700B9869E /* UIViewController+MMDrawerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02C9846F231B70D700B9869E /* MMDrawerBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 02C98466231B70D700B9869E /* MMDrawerBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02C98470231B70D700B9869E /* MMDrawerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 02C98467231B70D700B9869E /* MMDrawerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02C98471231B70D700B9869E /* MMDrawerController+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 02C98468231B70D700B9869E /* MMDrawerController+Subclass.h */; };
+		02C98472231B70D700B9869E /* MMDrawerVisualState.h in Headers */ = {isa = PBXBuildFile; fileRef = 02C98469231B70D700B9869E /* MMDrawerVisualState.h */; };
+		02C98473231B70D700B9869E /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9846A231B70D700B9869E /* MMDrawerController.m */; };
+		02C98474231B70D700B9869E /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9846B231B70D700B9869E /* MMDrawerBarButtonItem.m */; };
+		02F2D7FB21C6D09A00E3ABE8 /* MSContentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 02F2D7F921C6D09A00E3ABE8 /* MSContentManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02F2D7FC21C6D09A00E3ABE8 /* MSContentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F2D7FA21C6D09A00E3ABE8 /* MSContentManager.m */; };
+		02F2D80221C6DC0D00E3ABE8 /* cmdbinfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02F2D80121C6DC0D00E3ABE8 /* cmdbinfo.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		020EF7AE20AFA57D00C529AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 020EF79A20AFA57D00C529AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 020EF7A220AFA57D00C529AE;
+			remoteInfo = MSMobilecore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		02AD82FB20B14C78009AB9C3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PROJECT_DIR)/../../../ios-framework-libs";
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		020EF7A320AFA57D00C529AE /* MSMobilecore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MSMobilecore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		020EF7A620AFA57D00C529AE /* MSMobilecore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMobilecore.h; sourceTree = "<group>"; };
+		020EF7A720AFA57D00C529AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		020EF7AC20AFA57D00C529AE /* MSMobilecoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSMobilecoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		020EF7B120AFA57D00C529AE /* TestsMSSychronizedMutableDict.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestsMSSychronizedMutableDict.m; sourceTree = "<group>"; };
+		020EF7B320AFA57D00C529AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		020EF7BF20AFC30400C529AE /* MSSychronizedMutableDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSSychronizedMutableDictionary.h; sourceTree = "<group>"; };
+		020EF7C020AFC30400C529AE /* MSSychronizedMutableDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSSychronizedMutableDictionary.m; sourceTree = "<group>"; };
+		020EF7C820AFC97E00C529AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		020EF7CA20AFC98400C529AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		023185C921E5C44000DE2F72 /* MSMobileCoreTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMobileCoreTableViewCell.h; sourceTree = "<group>"; };
+		023185CA21E5C44000DE2F72 /* MSMobileCoreTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMobileCoreTableViewCell.m; sourceTree = "<group>"; };
+		0231B7DA21D803C60058694B /* MSMobileCoreBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMobileCoreBaseViewController.h; sourceTree = "<group>"; };
+		0231B7DB21D803C60058694B /* MSMobileCoreBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMobileCoreBaseViewController.m; sourceTree = "<group>"; };
+		02585B7721B3BAFF00AC1ACF /* MSMobileCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMobileCore.m; sourceTree = "<group>"; };
+		02585B7921B3BFF700AC1ACF /* MSMobileCoreResourceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMobileCoreResourceDelegate.h; sourceTree = "<group>"; };
+		02585B8221B8CCA200AC1ACF /* MSLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSLogger.h; sourceTree = "<group>"; };
+		02585B8321B8CCA200AC1ACF /* MSLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSLogger.m; sourceTree = "<group>"; };
+		02585B8621BBA2F700AC1ACF /* MSAESEncryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAESEncryptor.h; sourceTree = "<group>"; };
+		02585B8721BBA2F700AC1ACF /* MSAESEncryptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAESEncryptor.m; sourceTree = "<group>"; };
+		02585B8A21BBA37400AC1ACF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		02585B8C21BBA38C00AC1ACF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		02585B8E21BBA3A900AC1ACF /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		02585B9021BBA3E300AC1ACF /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		02585B9321BC383700AC1ACF /* MSDatabaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSDatabaseManager.h; sourceTree = "<group>"; };
+		02585B9421BC383700AC1ACF /* MSDatabaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSDatabaseManager.m; sourceTree = "<group>"; };
+		02585B9721BC386800AC1ACF /* MSDatabaseService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSDatabaseService.h; sourceTree = "<group>"; };
+		02585B9821BC386800AC1ACF /* MSDatabaseService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSDatabaseService.m; sourceTree = "<group>"; };
+		02585B9C21BC38AD00AC1ACF /* MSDBQueryResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSDBQueryResponse.h; sourceTree = "<group>"; };
+		02585B9D21BC38AD00AC1ACF /* MSDBQueryResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSDBQueryResponse.m; sourceTree = "<group>"; };
+		02585BA021BC38E900AC1ACF /* MSDBQueryBuild.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSDBQueryBuild.h; sourceTree = "<group>"; };
+		02585BA121BC38E900AC1ACF /* MSDBQueryBuild.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSDBQueryBuild.m; sourceTree = "<group>"; };
+		0260D4C221D823AD00BBDE9D /* MSMobleCoreTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMobleCoreTableViewController.h; sourceTree = "<group>"; };
+		0260D4C321D823AD00BBDE9D /* MSMobleCoreTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMobleCoreTableViewController.m; sourceTree = "<group>"; };
+		0260D4C821D8251400BBDE9D /* MSTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSTableView.h; sourceTree = "<group>"; };
+		0260D4C921D8251400BBDE9D /* MSTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSTableView.m; sourceTree = "<group>"; };
+		02AD830820B24F2E009AB9C3 /* MSObjectStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSObjectStack.h; sourceTree = "<group>"; };
+		02AD830920B24F2E009AB9C3 /* MSObjectStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSObjectStack.m; sourceTree = "<group>"; };
+		02C98463231B70D700B9869E /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawerVisualState.m; path = MMDrawerController/MMDrawerController/MMDrawerVisualState.m; sourceTree = "<group>"; };
+		02C98464231B70D700B9869E /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MMDrawerController.m"; path = "MMDrawerController/MMDrawerController/UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		02C98465231B70D700B9869E /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MMDrawerController.h"; path = "MMDrawerController/MMDrawerController/UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		02C98466231B70D700B9869E /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerBarButtonItem.h; path = MMDrawerController/MMDrawerController/MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		02C98467231B70D700B9869E /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerController.h; path = MMDrawerController/MMDrawerController/MMDrawerController.h; sourceTree = "<group>"; };
+		02C98468231B70D700B9869E /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MMDrawerController+Subclass.h"; path = "MMDrawerController/MMDrawerController/MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		02C98469231B70D700B9869E /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerVisualState.h; path = MMDrawerController/MMDrawerController/MMDrawerVisualState.h; sourceTree = "<group>"; };
+		02C9846A231B70D700B9869E /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawerController.m; path = MMDrawerController/MMDrawerController/MMDrawerController.m; sourceTree = "<group>"; };
+		02C9846B231B70D700B9869E /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawerBarButtonItem.m; path = MMDrawerController/MMDrawerController/MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		02F2D7F921C6D09A00E3ABE8 /* MSContentManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSContentManager.h; sourceTree = "<group>"; };
+		02F2D7FA21C6D09A00E3ABE8 /* MSContentManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSContentManager.m; sourceTree = "<group>"; };
+		02F2D80121C6DC0D00E3ABE8 /* cmdbinfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cmdbinfo.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		020EF79F20AFA57D00C529AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02585B9121BBA3E300AC1ACF /* libsqlite3.0.tbd in Frameworks */,
+				02585B8F21BBA3A900AC1ACF /* CoreText.framework in Frameworks */,
+				02585B8D21BBA38C00AC1ACF /* CFNetwork.framework in Frameworks */,
+				02585B8B21BBA37400AC1ACF /* Security.framework in Frameworks */,
+				020EF7CB20AFC98400C529AE /* UIKit.framework in Frameworks */,
+				020EF7C920AFC97E00C529AE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		020EF7A920AFA57D00C529AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020EF7AD20AFA57D00C529AE /* MSMobilecore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		020EF79920AFA57D00C529AE = {
+			isa = PBXGroup;
+			children = (
+				020EF7C720AFC97E00C529AE /* Frameworks */,
+				020EF7A520AFA57D00C529AE /* MSMobilecore */,
+				020EF7B020AFA57D00C529AE /* MSMobilecoreTests */,
+				020EF7A420AFA57D00C529AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		020EF7A420AFA57D00C529AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				020EF7A320AFA57D00C529AE /* MSMobilecore.framework */,
+				020EF7AC20AFA57D00C529AE /* MSMobilecoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		020EF7A520AFA57D00C529AE /* MSMobilecore */ = {
+			isa = PBXGroup;
+			children = (
+				02C98460231B707100B9869E /* Libs */,
+				020EF7A720AFA57D00C529AE /* Info.plist */,
+				020EF7A620AFA57D00C529AE /* MSMobilecore.h */,
+				02585B7721B3BAFF00AC1ACF /* MSMobileCore.m */,
+				020EF7BD20AFC2A800C529AE /* Utility */,
+			);
+			path = MSMobilecore;
+			sourceTree = "<group>";
+		};
+		020EF7B020AFA57D00C529AE /* MSMobilecoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				020EF7B120AFA57D00C529AE /* TestsMSSychronizedMutableDict.m */,
+				020EF7B320AFA57D00C529AE /* Info.plist */,
+			);
+			path = MSMobilecoreTests;
+			sourceTree = "<group>";
+		};
+		020EF7BD20AFC2A800C529AE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0260D4C621D8244C00BBDE9D /* Cells */,
+				0231B7D921D8039E0058694B /* ViewController */,
+				02F2D80521C8BEEF00E3ABE8 /* ServiceEngine */,
+				02F2D7F821C6D02200E3ABE8 /* ContentManager */,
+				02585B9221BC37DC00AC1ACF /* Persistance */,
+				02585B7621B3A70E00AC1ACF /* Delagates */,
+				020EF7BE20AFC2BD00C529AE /* Common */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		020EF7BE20AFC2BD00C529AE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				020EF7BF20AFC30400C529AE /* MSSychronizedMutableDictionary.h */,
+				020EF7C020AFC30400C529AE /* MSSychronizedMutableDictionary.m */,
+				02AD830820B24F2E009AB9C3 /* MSObjectStack.h */,
+				02AD830920B24F2E009AB9C3 /* MSObjectStack.m */,
+				02585B8221B8CCA200AC1ACF /* MSLogger.h */,
+				02585B8321B8CCA200AC1ACF /* MSLogger.m */,
+				02585B8621BBA2F700AC1ACF /* MSAESEncryptor.h */,
+				02585B8721BBA2F700AC1ACF /* MSAESEncryptor.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		020EF7C720AFC97E00C529AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02585B9021BBA3E300AC1ACF /* libsqlite3.0.tbd */,
+				02585B8E21BBA3A900AC1ACF /* CoreText.framework */,
+				02585B8C21BBA38C00AC1ACF /* CFNetwork.framework */,
+				02585B8A21BBA37400AC1ACF /* Security.framework */,
+				020EF7CA20AFC98400C529AE /* UIKit.framework */,
+				020EF7C820AFC97E00C529AE /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0231B7D921D8039E0058694B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0260D4C721D824F700BBDE9D /* View */,
+				0231B7DA21D803C60058694B /* MSMobileCoreBaseViewController.h */,
+				0231B7DB21D803C60058694B /* MSMobileCoreBaseViewController.m */,
+				0260D4C221D823AD00BBDE9D /* MSMobleCoreTableViewController.h */,
+				0260D4C321D823AD00BBDE9D /* MSMobleCoreTableViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		02585B7621B3A70E00AC1ACF /* Delagates */ = {
+			isa = PBXGroup;
+			children = (
+				02585B7921B3BFF700AC1ACF /* MSMobileCoreResourceDelegate.h */,
+			);
+			path = Delagates;
+			sourceTree = "<group>";
+		};
+		02585B9221BC37DC00AC1ACF /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				02585B9321BC383700AC1ACF /* MSDatabaseManager.h */,
+				02585B9421BC383700AC1ACF /* MSDatabaseManager.m */,
+				02585B9721BC386800AC1ACF /* MSDatabaseService.h */,
+				02585B9821BC386800AC1ACF /* MSDatabaseService.m */,
+				02585B9C21BC38AD00AC1ACF /* MSDBQueryResponse.h */,
+				02585B9D21BC38AD00AC1ACF /* MSDBQueryResponse.m */,
+				02585BA021BC38E900AC1ACF /* MSDBQueryBuild.h */,
+				02585BA121BC38E900AC1ACF /* MSDBQueryBuild.m */,
+			);
+			path = Persistance;
+			sourceTree = "<group>";
+		};
+		0260D4C621D8244C00BBDE9D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				023185C921E5C44000DE2F72 /* MSMobileCoreTableViewCell.h */,
+				023185CA21E5C44000DE2F72 /* MSMobileCoreTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0260D4C721D824F700BBDE9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0260D4C821D8251400BBDE9D /* MSTableView.h */,
+				0260D4C921D8251400BBDE9D /* MSTableView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		02C98460231B707100B9869E /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				02C98466231B70D700B9869E /* MMDrawerBarButtonItem.h */,
+				02C9846B231B70D700B9869E /* MMDrawerBarButtonItem.m */,
+				02C98467231B70D700B9869E /* MMDrawerController.h */,
+				02C9846A231B70D700B9869E /* MMDrawerController.m */,
+				02C98468231B70D700B9869E /* MMDrawerController+Subclass.h */,
+				02C98469231B70D700B9869E /* MMDrawerVisualState.h */,
+				02C98463231B70D700B9869E /* MMDrawerVisualState.m */,
+				02C98465231B70D700B9869E /* UIViewController+MMDrawerController.h */,
+				02C98464231B70D700B9869E /* UIViewController+MMDrawerController.m */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		02F2D7F821C6D02200E3ABE8 /* ContentManager */ = {
+			isa = PBXGroup;
+			children = (
+				02F2D80121C6DC0D00E3ABE8 /* cmdbinfo.plist */,
+				02F2D7F921C6D09A00E3ABE8 /* MSContentManager.h */,
+				02F2D7FA21C6D09A00E3ABE8 /* MSContentManager.m */,
+			);
+			path = ContentManager;
+			sourceTree = "<group>";
+		};
+		02F2D80521C8BEEF00E3ABE8 /* ServiceEngine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ServiceEngine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		020EF7A020AFA57D00C529AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0260D4C421D823AD00BBDE9D /* MSMobleCoreTableViewController.h in Headers */,
+				02585B9E21BC38AD00AC1ACF /* MSDBQueryResponse.h in Headers */,
+				020EF7C120AFC30400C529AE /* MSSychronizedMutableDictionary.h in Headers */,
+				02585B7A21B3BFF700AC1ACF /* MSMobileCoreResourceDelegate.h in Headers */,
+				020EF7B420AFA57D00C529AE /* MSMobilecore.h in Headers */,
+				02585B8421B8CCA200AC1ACF /* MSLogger.h in Headers */,
+				02C9846E231B70D700B9869E /* UIViewController+MMDrawerController.h in Headers */,
+				02585B9521BC383700AC1ACF /* MSDatabaseManager.h in Headers */,
+				02F2D7FB21C6D09A00E3ABE8 /* MSContentManager.h in Headers */,
+				02C98470231B70D700B9869E /* MMDrawerController.h in Headers */,
+				02C9846F231B70D700B9869E /* MMDrawerBarButtonItem.h in Headers */,
+				0231B7DC21D803C60058694B /* MSMobileCoreBaseViewController.h in Headers */,
+				023185CB21E5C44000DE2F72 /* MSMobileCoreTableViewCell.h in Headers */,
+				0260D4CA21D8251400BBDE9D /* MSTableView.h in Headers */,
+				02AD830A20B24F2E009AB9C3 /* MSObjectStack.h in Headers */,
+				02C98472231B70D700B9869E /* MMDrawerVisualState.h in Headers */,
+				02C98471231B70D700B9869E /* MMDrawerController+Subclass.h in Headers */,
+				02585BA221BC38E900AC1ACF /* MSDBQueryBuild.h in Headers */,
+				02585B8821BBA2F700AC1ACF /* MSAESEncryptor.h in Headers */,
+				02585B9921BC386800AC1ACF /* MSDatabaseService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		020EF7A220AFA57D00C529AE /* MSMobilecore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 020EF7B720AFA57D00C529AE /* Build configuration list for PBXNativeTarget "MSMobilecore" */;
+			buildPhases = (
+				020EF79E20AFA57D00C529AE /* Sources */,
+				020EF79F20AFA57D00C529AE /* Frameworks */,
+				020EF7A020AFA57D00C529AE /* Headers */,
+				020EF7A120AFA57D00C529AE /* Resources */,
+				02AD82FB20B14C78009AB9C3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MSMobilecore;
+			productName = MSMobilecore;
+			productReference = 020EF7A320AFA57D00C529AE /* MSMobilecore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		020EF7AB20AFA57D00C529AE /* MSMobilecoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 020EF7BA20AFA57D00C529AE /* Build configuration list for PBXNativeTarget "MSMobilecoreTests" */;
+			buildPhases = (
+				020EF7A820AFA57D00C529AE /* Sources */,
+				020EF7A920AFA57D00C529AE /* Frameworks */,
+				020EF7AA20AFA57D00C529AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				020EF7AF20AFA57D00C529AE /* PBXTargetDependency */,
+			);
+			name = MSMobilecoreTests;
+			productName = MSMobilecoreTests;
+			productReference = 020EF7AC20AFA57D00C529AE /* MSMobilecoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		020EF79A20AFA57D00C529AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = mulvsoft;
+				TargetAttributes = {
+					020EF7A220AFA57D00C529AE = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					020EF7AB20AFA57D00C529AE = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					020EF7C320AFC94900C529AE = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 020EF79D20AFA57D00C529AE /* Build configuration list for PBXProject "MSMobilecore" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 020EF79920AFA57D00C529AE;
+			productRefGroup = 020EF7A420AFA57D00C529AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				020EF7A220AFA57D00C529AE /* MSMobilecore */,
+				020EF7AB20AFA57D00C529AE /* MSMobilecoreTests */,
+				020EF7C320AFC94900C529AE /* Target */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		020EF7A120AFA57D00C529AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F2D80221C6DC0D00E3ABE8 /* cmdbinfo.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		020EF7AA20AFA57D00C529AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		020EF79E20AFA57D00C529AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C9846C231B70D700B9869E /* MMDrawerVisualState.m in Sources */,
+				0260D4C521D823AD00BBDE9D /* MSMobleCoreTableViewController.m in Sources */,
+				02585B9621BC383700AC1ACF /* MSDatabaseManager.m in Sources */,
+				023185CC21E5C44000DE2F72 /* MSMobileCoreTableViewCell.m in Sources */,
+				02585B9F21BC38AD00AC1ACF /* MSDBQueryResponse.m in Sources */,
+				020EF7C220AFC30400C529AE /* MSSychronizedMutableDictionary.m in Sources */,
+				02585B8521B8CCA200AC1ACF /* MSLogger.m in Sources */,
+				0260D4CB21D8251400BBDE9D /* MSTableView.m in Sources */,
+				0231B7DD21D803C60058694B /* MSMobileCoreBaseViewController.m in Sources */,
+				02585BA321BC38E900AC1ACF /* MSDBQueryBuild.m in Sources */,
+				02585B8921BBA2F700AC1ACF /* MSAESEncryptor.m in Sources */,
+				02C9846D231B70D700B9869E /* UIViewController+MMDrawerController.m in Sources */,
+				02AD830B20B24F2E009AB9C3 /* MSObjectStack.m in Sources */,
+				02C98474231B70D700B9869E /* MMDrawerBarButtonItem.m in Sources */,
+				02F2D7FC21C6D09A00E3ABE8 /* MSContentManager.m in Sources */,
+				02585B7821B3BAFF00AC1ACF /* MSMobileCore.m in Sources */,
+				02C98473231B70D700B9869E /* MMDrawerController.m in Sources */,
+				02585B9A21BC386800AC1ACF /* MSDatabaseService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		020EF7A820AFA57D00C529AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020EF7B220AFA57D00C529AE /* TestsMSSychronizedMutableDict.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		020EF7AF20AFA57D00C529AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 020EF7A220AFA57D00C529AE /* MSMobilecore */;
+			targetProxy = 020EF7AE20AFA57D00C529AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		020EF7B520AFA57D00C529AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		020EF7B620AFA57D00C529AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		020EF7B820AFA57D00C529AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YR37Y2UVNX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MSMobilecore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mulvsoft.MSMobilecore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_UIKITFORMAC = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		020EF7B920AFA57D00C529AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YR37Y2UVNX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MSMobilecore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mulvsoft.MSMobilecore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_UIKITFORMAC = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		020EF7BB20AFA57D00C529AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YR37Y2UVNX;
+				INFOPLIST_FILE = MSMobilecoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mulvsoft.MSMobilecoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		020EF7BC20AFA57D00C529AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YR37Y2UVNX;
+				INFOPLIST_FILE = MSMobilecoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mulvsoft.MSMobilecoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		020EF7C520AFC94900C529AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YR37Y2UVNX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		020EF7C620AFC94900C529AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YR37Y2UVNX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		020EF79D20AFA57D00C529AE /* Build configuration list for PBXProject "MSMobilecore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020EF7B520AFA57D00C529AE /* Debug */,
+				020EF7B620AFA57D00C529AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		020EF7B720AFA57D00C529AE /* Build configuration list for PBXNativeTarget "MSMobilecore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020EF7B820AFA57D00C529AE /* Debug */,
+				020EF7B920AFA57D00C529AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		020EF7BA20AFA57D00C529AE /* Build configuration list for PBXNativeTarget "MSMobilecoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020EF7BB20AFA57D00C529AE /* Debug */,
+				020EF7BC20AFA57D00C529AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		020EF7C420AFC94900C529AE /* Build configuration list for PBXAggregateTarget "Target" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020EF7C520AFC94900C529AE /* Debug */,
+				020EF7C620AFC94900C529AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 020EF79A20AFA57D00C529AE /* Project object */;
+}

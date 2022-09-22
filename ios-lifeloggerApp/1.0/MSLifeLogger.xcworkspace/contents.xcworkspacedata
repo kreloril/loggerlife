@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:LifeLogger/LoggerLife.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../ios-feature-lifelogger/1.0/MSFeatureLifeLogger/MSFeatureLifeLogger.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../ios-framework-mobilecore/1.0/MSMobilecore/MSMobilecore.xcodeproj">
+   </FileRef>
+</Workspace>

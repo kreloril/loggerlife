@@ -1,0 +1,24 @@
+//
+//  MSFeatureCMKeys.h
+//  MSFeatureLifeLogger
+//
+//  Created by John Mulvey on 12/16/18.
+//  Copyright © 2018 mulvsoft. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+FOUNDATION_EXPORT NSString* const CKEY_BACK;
+FOUNDATION_EXPORT NSString* const CKEY_NEXT;
+FOUNDATION_EXPORT NSString* const CKEY_TITLE;
+FOUNDATION_EXPORT NSString* const CKEY_VERSION;
+FOUNDATION_EXPORT NSString* const CKEY_ADD;
+FOUNDATION_EXPORT NSString* const CKEY_LOGS;
+FOUNDATION_EXPORT NSString* const CKEY_CATAGORY;
+FOUNDATION_EXPORT NSString* const CKEY_ADD_CATAGORY;
+FOUNDATION_EXPORT NSString* const CKEY_CANCEL;
+FOUNDATION_EXPORT NSString* const CKEY_LOG;
+FOUNDATION_EXPORT NSString* const CKEY_EDIT;
+FOUNDATION_EXPORT NSString* const CKEY_DELETE;
+FOUNDATION_EXPORT NSString* const CKEY_MARK;
+

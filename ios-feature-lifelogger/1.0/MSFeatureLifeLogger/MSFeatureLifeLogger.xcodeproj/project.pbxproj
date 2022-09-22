@@ -1,0 +1,896 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02154A66231CD63C00A33EAA /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02154A65231CD63C00A33EAA /* GoogleMobileAds.framework */; platformFilter = ios; };
+		02585B6621B3A01E00AC1ACF /* MSFeatureLifeLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 02585B6521B3A01E00AC1ACF /* MSFeatureLifeLogger.m */; };
+		02585BA521BCAB4800AC1ACF /* MasterDB.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02585BA421BCAB4800AC1ACF /* MasterDB.plist */; };
+		0260D4D121D8955700BBDE9D /* MSFeatureLifeLoggerVisualSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 0260D4CF21D8955700BBDE9D /* MSFeatureLifeLoggerVisualSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0260D4D521D8969B00BBDE9D /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4D321D8969B00BBDE9D /* UIColor+Hex.m */; };
+		0260D4D621D8969B00BBDE9D /* UIColor+Hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 0260D4D421D8969B00BBDE9D /* UIColor+Hex.h */; };
+		0260D4DD21D9CF7900BBDE9D /* MSLifeLoggerCatagory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0260D4DB21D9CF7900BBDE9D /* MSLifeLoggerCatagory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0260D4DE21D9CF7900BBDE9D /* MSLifeLoggerCatagory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4DC21D9CF7900BBDE9D /* MSLifeLoggerCatagory.m */; };
+		0260D4E121DAC0B300BBDE9D /* MSLifeLoggerLogEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 0260D4DF21DAC0B300BBDE9D /* MSLifeLoggerLogEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0260D4E221DAC0B300BBDE9D /* MSLifeLoggerLogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4E021DAC0B300BBDE9D /* MSLifeLoggerLogEntry.m */; };
+		0260D4E521DAC0EB00BBDE9D /* MSLifeLoggerLogEntryData.h in Headers */ = {isa = PBXBuildFile; fileRef = 0260D4E321DAC0EB00BBDE9D /* MSLifeLoggerLogEntryData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0260D4E621DAC0EB00BBDE9D /* MSLifeLoggerLogEntryData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260D4E421DAC0EB00BBDE9D /* MSLifeLoggerLogEntryData.m */; };
+		026BC6A122272F5600D41046 /* MSLifeLoggerUserSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 026BC69F22272F5600D41046 /* MSLifeLoggerUserSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		026BC6A222272F5600D41046 /* MSLifeLoggerUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 026BC6A022272F5600D41046 /* MSLifeLoggerUserSettings.m */; };
+		026BC6A82227EC4700D41046 /* MSFeatureLifeLoggerVisualSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 026BC6A72227EC4700D41046 /* MSFeatureLifeLoggerVisualSpec.m */; };
+		02990105235D092B00B8DDFA /* MSTableViewCellDelgates.h in Headers */ = {isa = PBXBuildFile; fileRef = 029900D7235D092900B8DDFA /* MSTableViewCellDelgates.h */; };
+		02990106235D092B00B8DDFA /* MSLifeLoggerCatagoryOptionsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 029900D8235D092900B8DDFA /* MSLifeLoggerCatagoryOptionsViewController.h */; };
+		02990107235D092B00B8DDFA /* CenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 029900D9235D092900B8DDFA /* CenterTableViewCell.xib */; };
+		02990108235D092B00B8DDFA /* MSLifeLoggerAboutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 029900DA235D092900B8DDFA /* MSLifeLoggerAboutViewController.h */; };
+		02990109235D092B00B8DDFA /* MSMobileChangeCatagoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 029900DB235D092900B8DDFA /* MSMobileChangeCatagoryViewController.m */; };
+		0299010A235D092B00B8DDFA /* MSLifeLoggerExportLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 029900DC235D092900B8DDFA /* MSLifeLoggerExportLogViewController.m */; };
+		0299010B235D092B00B8DDFA /* MSMobileChangeCatagoryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 029900DD235D092900B8DDFA /* MSMobileChangeCatagoryViewController.h */; };
+		0299010C235D092B00B8DDFA /* MSLifeLoggerEditCatagoryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 029900DE235D092900B8DDFA /* MSLifeLoggerEditCatagoryViewController.h */; };
+		0299010D235D092B00B8DDFA /* MSLifeLoggerEditCatagoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 029900DF235D092900B8DDFA /* MSLifeLoggerEditCatagoryTableViewCell.xib */; };
+		0299010E235D092B00B8DDFA /* MSLifeLoggerAddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 029900E0235D092900B8DDFA /* MSLifeLoggerAddEventViewController.m */; };
+		0299010F235D092B00B8DDFA /* SpacingTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 029900E1235D092900B8DDFA /* SpacingTableViewCell.h */; };
+		02990111235D092B00B8DDFA /* CenterTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 029900E3235D092900B8DDFA /* CenterTableViewCell.h */; };
+		02990112235D092B00B8DDFA /* HeaderTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 029900E4235D092900B8DDFA /* HeaderTableViewCell.h */; };
+		02990113235D092B00B8DDFA /* MSLifeLoggerAboutTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 029900E5235D092900B8DDFA /* MSLifeLoggerAboutTableViewCell.h */; };
+		02990114235D092B00B8DDFA /* MSMobileChangeCatagoryOrderViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 029900E6235D092900B8DDFA /* MSMobileChangeCatagoryOrderViewController.h */; };
+		02990115235D092B00B8DDFA /* MSLifeLoggerCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 029900E7235D092A00B8DDFA /* MSLifeLoggerCenterViewController.m */; };
+		02990117235D092B00B8DDFA /* MSLifeLoggerAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 029900E9235D092A00B8DDFA /* MSLifeLoggerAboutViewController.m */; };
+		02990118235D092B00B8DDFA /* MSLifeLoggerAboutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 029900EA235D092A00B8DDFA /* MSLifeLoggerAboutTableViewCell.xib */; };
+		02990119235D092B00B8DDFA /* MSLifeLoggerAddEventViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 029900EB235D092A00B8DDFA /* MSLifeLoggerAddEventViewController.h */; };
+		0299011A235D092B00B8DDFA /* MSLifeLoggerCenterViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 029900EC235D092A00B8DDFA /* MSLifeLoggerCenterViewController.h */; };
+		0299011B235D092B00B8DDFA /* MSLifeLoggerAboutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 029900ED235D092A00B8DDFA /* MSLifeLoggerAboutTableViewCell.m */; };
+		0299011C235D092B00B8DDFA /* MSLifeLoggerExportLogViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 029900EE235D092A00B8DDFA /* MSLifeLoggerExportLogViewController.h */; };
+		02990120235D092B00B8DDFA /* SpacingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 029900F2235D092A00B8DDFA /* SpacingTableViewCell.m */; };
+		02990121235D092B00B8DDFA /* SpacingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 029900F3235D092A00B8DDFA /* SpacingTableViewCell.xib */; };
+		02990122235D092B00B8DDFA /* MSMobileChangeCatagoryOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 029900F4235D092A00B8DDFA /* MSMobileChangeCatagoryOrderViewController.m */; };
+		02990124235D092B00B8DDFA /* MSLifeLoggerEditCatagoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 029900F6235D092A00B8DDFA /* MSLifeLoggerEditCatagoryTableViewCell.m */; };
+		02990125235D092B00B8DDFA /* MSLifeLoggerEditCatagoryTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 029900F7235D092A00B8DDFA /* MSLifeLoggerEditCatagoryTableViewCell.h */; };
+		02990127235D092B00B8DDFA /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 029900F9235D092A00B8DDFA /* HeaderTableViewCell.xib */; };
+		02990128235D092B00B8DDFA /* MSLifeLoggerEditCatagoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 029900FA235D092A00B8DDFA /* MSLifeLoggerEditCatagoryViewController.m */; };
+		0299012A235D092B00B8DDFA /* HeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 029900FC235D092A00B8DDFA /* HeaderTableViewCell.m */; };
+		0299012C235D092B00B8DDFA /* CenterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 029900FE235D092A00B8DDFA /* CenterTableViewCell.m */; };
+		0299012D235D092B00B8DDFA /* TextViewTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 029900FF235D092A00B8DDFA /* TextViewTableViewCell.h */; };
+		0299012E235D092B00B8DDFA /* TextViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02990100235D092A00B8DDFA /* TextViewTableViewCell.m */; };
+		0299012F235D092B00B8DDFA /* MSLifeLoggerCatagoryOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02990101235D092A00B8DDFA /* MSLifeLoggerCatagoryOptionsViewController.m */; };
+		02990131235D092B00B8DDFA /* TextViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02990103235D092B00B8DDFA /* TextViewTableViewCell.xib */; };
+		02990149235D11CE00B8DDFA /* MSLifeLoggerLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02990147235D11CE00B8DDFA /* MSLifeLoggerLeftViewController.m */; };
+		0299014A235D11CE00B8DDFA /* MSLifeLoggerLeftViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 02990148235D11CE00B8DDFA /* MSLifeLoggerLeftViewController.h */; };
+		02AD827520B13A68009AB9C3 /* MSFeatureLifeLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02AD826B20B13A68009AB9C3 /* MSFeatureLifeLogger.framework */; };
+		02AD827A20B13A68009AB9C3 /* MSFeatureLifeLoggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AD827920B13A68009AB9C3 /* MSFeatureLifeLoggerTests.m */; };
+		02AD827C20B13A68009AB9C3 /* MSFeatureLifeLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 02AD826E20B13A68009AB9C3 /* MSFeatureLifeLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02C713E424B42EA0001BE663 /* MSMobilecore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C713E324B42EA0001BE663 /* MSMobilecore.framework */; };
+		02C713E524B42EA0001BE663 /* MSMobilecore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02C713E324B42EA0001BE663 /* MSMobilecore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		02F2D7FF21C6D58900E3ABE8 /* MSFeatureCMKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 02F2D7FD21C6D58900E3ABE8 /* MSFeatureCMKeys.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02F2D80021C6D58900E3ABE8 /* MSFeatureCMKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F2D7FE21C6D58900E3ABE8 /* MSFeatureCMKeys.m */; };
+		02F2D80421C6DD4A00E3ABE8 /* dbcmskeys.db in Resources */ = {isa = PBXBuildFile; fileRef = 02F2D80321C6DD4A00E3ABE8 /* dbcmskeys.db */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02AD827620B13A68009AB9C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02AD826220B13A68009AB9C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02AD826A20B13A68009AB9C3;
+			remoteInfo = MSFeatureLifeLogger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		02585B6A21B3A2ED00AC1ACF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PROJECT_DIR)/../../../ios-framework-libs";
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02C713E624B42EA0001BE663 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				02C713E524B42EA0001BE663 /* MSMobilecore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02154A65231CD63C00A33EAA /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = MSFeatureLifeLogger/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		02585B6521B3A01E00AC1ACF /* MSFeatureLifeLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSFeatureLifeLogger.m; sourceTree = "<group>"; };
+		02585B6B21B3A33700AC1ACF /* MSMobilecore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MSMobilecore.framework; path = "../../../ios-framework-libs/MSMobilecore.framework"; sourceTree = "<group>"; };
+		02585BA421BCAB4800AC1ACF /* MasterDB.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MasterDB.plist; sourceTree = "<group>"; };
+		0260D4CF21D8955700BBDE9D /* MSFeatureLifeLoggerVisualSpec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSFeatureLifeLoggerVisualSpec.h; sourceTree = "<group>"; };
+		0260D4D321D8969B00BBDE9D /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		0260D4D421D8969B00BBDE9D /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		0260D4DB21D9CF7900BBDE9D /* MSLifeLoggerCatagory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSLifeLoggerCatagory.h; sourceTree = "<group>"; };
+		0260D4DC21D9CF7900BBDE9D /* MSLifeLoggerCatagory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSLifeLoggerCatagory.m; sourceTree = "<group>"; };
+		0260D4DF21DAC0B300BBDE9D /* MSLifeLoggerLogEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSLifeLoggerLogEntry.h; sourceTree = "<group>"; };
+		0260D4E021DAC0B300BBDE9D /* MSLifeLoggerLogEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSLifeLoggerLogEntry.m; sourceTree = "<group>"; };
+		0260D4E321DAC0EB00BBDE9D /* MSLifeLoggerLogEntryData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSLifeLoggerLogEntryData.h; sourceTree = "<group>"; };
+		0260D4E421DAC0EB00BBDE9D /* MSLifeLoggerLogEntryData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSLifeLoggerLogEntryData.m; sourceTree = "<group>"; };
+		026BC69F22272F5600D41046 /* MSLifeLoggerUserSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSLifeLoggerUserSettings.h; sourceTree = "<group>"; };
+		026BC6A022272F5600D41046 /* MSLifeLoggerUserSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSLifeLoggerUserSettings.m; sourceTree = "<group>"; };
+		026BC6A72227EC4700D41046 /* MSFeatureLifeLoggerVisualSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSFeatureLifeLoggerVisualSpec.m; sourceTree = "<group>"; };
+		029900D7235D092900B8DDFA /* MSTableViewCellDelgates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSTableViewCellDelgates.h; path = Controllers/MSTableViewCellDelgates.h; sourceTree = "<group>"; };
+		029900D8235D092900B8DDFA /* MSLifeLoggerCatagoryOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerCatagoryOptionsViewController.h; path = Controllers/MSLifeLoggerCatagoryOptionsViewController.h; sourceTree = "<group>"; };
+		029900D9235D092900B8DDFA /* CenterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CenterTableViewCell.xib; path = Controllers/CenterTableViewCell.xib; sourceTree = "<group>"; };
+		029900DA235D092900B8DDFA /* MSLifeLoggerAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerAboutViewController.h; path = Controllers/MSLifeLoggerAboutViewController.h; sourceTree = "<group>"; };
+		029900DB235D092900B8DDFA /* MSMobileChangeCatagoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSMobileChangeCatagoryViewController.m; path = Controllers/MSMobileChangeCatagoryViewController.m; sourceTree = "<group>"; };
+		029900DC235D092900B8DDFA /* MSLifeLoggerExportLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerExportLogViewController.m; path = Controllers/MSLifeLoggerExportLogViewController.m; sourceTree = "<group>"; };
+		029900DD235D092900B8DDFA /* MSMobileChangeCatagoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSMobileChangeCatagoryViewController.h; path = Controllers/MSMobileChangeCatagoryViewController.h; sourceTree = "<group>"; };
+		029900DE235D092900B8DDFA /* MSLifeLoggerEditCatagoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerEditCatagoryViewController.h; path = Controllers/MSLifeLoggerEditCatagoryViewController.h; sourceTree = "<group>"; };
+		029900DF235D092900B8DDFA /* MSLifeLoggerEditCatagoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSLifeLoggerEditCatagoryTableViewCell.xib; path = Controllers/MSLifeLoggerEditCatagoryTableViewCell.xib; sourceTree = "<group>"; };
+		029900E0235D092900B8DDFA /* MSLifeLoggerAddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerAddEventViewController.m; path = Controllers/MSLifeLoggerAddEventViewController.m; sourceTree = "<group>"; };
+		029900E1235D092900B8DDFA /* SpacingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpacingTableViewCell.h; path = Controllers/SpacingTableViewCell.h; sourceTree = "<group>"; };
+		029900E3235D092900B8DDFA /* CenterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CenterTableViewCell.h; path = Controllers/CenterTableViewCell.h; sourceTree = "<group>"; };
+		029900E4235D092900B8DDFA /* HeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderTableViewCell.h; path = Controllers/HeaderTableViewCell.h; sourceTree = "<group>"; };
+		029900E5235D092900B8DDFA /* MSLifeLoggerAboutTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerAboutTableViewCell.h; path = Controllers/MSLifeLoggerAboutTableViewCell.h; sourceTree = "<group>"; };
+		029900E6235D092900B8DDFA /* MSMobileChangeCatagoryOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSMobileChangeCatagoryOrderViewController.h; path = Controllers/MSMobileChangeCatagoryOrderViewController.h; sourceTree = "<group>"; };
+		029900E7235D092A00B8DDFA /* MSLifeLoggerCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerCenterViewController.m; path = Controllers/MSLifeLoggerCenterViewController.m; sourceTree = "<group>"; };
+		029900E9235D092A00B8DDFA /* MSLifeLoggerAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerAboutViewController.m; path = Controllers/MSLifeLoggerAboutViewController.m; sourceTree = "<group>"; };
+		029900EA235D092A00B8DDFA /* MSLifeLoggerAboutTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSLifeLoggerAboutTableViewCell.xib; path = Controllers/MSLifeLoggerAboutTableViewCell.xib; sourceTree = "<group>"; };
+		029900EB235D092A00B8DDFA /* MSLifeLoggerAddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerAddEventViewController.h; path = Controllers/MSLifeLoggerAddEventViewController.h; sourceTree = "<group>"; };
+		029900EC235D092A00B8DDFA /* MSLifeLoggerCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerCenterViewController.h; path = Controllers/MSLifeLoggerCenterViewController.h; sourceTree = "<group>"; };
+		029900ED235D092A00B8DDFA /* MSLifeLoggerAboutTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerAboutTableViewCell.m; path = Controllers/MSLifeLoggerAboutTableViewCell.m; sourceTree = "<group>"; };
+		029900EE235D092A00B8DDFA /* MSLifeLoggerExportLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerExportLogViewController.h; path = Controllers/MSLifeLoggerExportLogViewController.h; sourceTree = "<group>"; };
+		029900F2235D092A00B8DDFA /* SpacingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpacingTableViewCell.m; path = Controllers/SpacingTableViewCell.m; sourceTree = "<group>"; };
+		029900F3235D092A00B8DDFA /* SpacingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SpacingTableViewCell.xib; path = Controllers/SpacingTableViewCell.xib; sourceTree = "<group>"; };
+		029900F4235D092A00B8DDFA /* MSMobileChangeCatagoryOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSMobileChangeCatagoryOrderViewController.m; path = Controllers/MSMobileChangeCatagoryOrderViewController.m; sourceTree = "<group>"; };
+		029900F6235D092A00B8DDFA /* MSLifeLoggerEditCatagoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerEditCatagoryTableViewCell.m; path = Controllers/MSLifeLoggerEditCatagoryTableViewCell.m; sourceTree = "<group>"; };
+		029900F7235D092A00B8DDFA /* MSLifeLoggerEditCatagoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerEditCatagoryTableViewCell.h; path = Controllers/MSLifeLoggerEditCatagoryTableViewCell.h; sourceTree = "<group>"; };
+		029900F9235D092A00B8DDFA /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderTableViewCell.xib; path = Controllers/HeaderTableViewCell.xib; sourceTree = "<group>"; };
+		029900FA235D092A00B8DDFA /* MSLifeLoggerEditCatagoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerEditCatagoryViewController.m; path = Controllers/MSLifeLoggerEditCatagoryViewController.m; sourceTree = "<group>"; };
+		029900FC235D092A00B8DDFA /* HeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderTableViewCell.m; path = Controllers/HeaderTableViewCell.m; sourceTree = "<group>"; };
+		029900FE235D092A00B8DDFA /* CenterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CenterTableViewCell.m; path = Controllers/CenterTableViewCell.m; sourceTree = "<group>"; };
+		029900FF235D092A00B8DDFA /* TextViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextViewTableViewCell.h; path = Controllers/TextViewTableViewCell.h; sourceTree = "<group>"; };
+		02990100235D092A00B8DDFA /* TextViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextViewTableViewCell.m; path = Controllers/TextViewTableViewCell.m; sourceTree = "<group>"; };
+		02990101235D092A00B8DDFA /* MSLifeLoggerCatagoryOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerCatagoryOptionsViewController.m; path = Controllers/MSLifeLoggerCatagoryOptionsViewController.m; sourceTree = "<group>"; };
+		02990103235D092B00B8DDFA /* TextViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TextViewTableViewCell.xib; path = Controllers/TextViewTableViewCell.xib; sourceTree = "<group>"; };
+		02990146235D107600B8DDFA /* MSFeatureLifeLoggerScreens.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSFeatureLifeLoggerScreens.h; sourceTree = "<group>"; };
+		02990147235D11CE00B8DDFA /* MSLifeLoggerLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerLeftViewController.m; path = Controllers/MSLifeLoggerLeftViewController.m; sourceTree = "<group>"; };
+		02990148235D11CE00B8DDFA /* MSLifeLoggerLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerLeftViewController.h; path = Controllers/MSLifeLoggerLeftViewController.h; sourceTree = "<group>"; };
+		02AD826B20B13A68009AB9C3 /* MSFeatureLifeLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MSFeatureLifeLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02AD826E20B13A68009AB9C3 /* MSFeatureLifeLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSFeatureLifeLogger.h; sourceTree = "<group>"; };
+		02AD826F20B13A68009AB9C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02AD827420B13A68009AB9C3 /* MSFeatureLifeLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSFeatureLifeLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02AD827920B13A68009AB9C3 /* MSFeatureLifeLoggerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSFeatureLifeLoggerTests.m; sourceTree = "<group>"; };
+		02AD827B20B13A68009AB9C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02C713E324B42EA0001BE663 /* MSMobilecore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MSMobilecore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02F2D7FD21C6D58900E3ABE8 /* MSFeatureCMKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSFeatureCMKeys.h; sourceTree = "<group>"; };
+		02F2D7FE21C6D58900E3ABE8 /* MSFeatureCMKeys.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSFeatureCMKeys.m; sourceTree = "<group>"; };
+		02F2D80321C6DD4A00E3ABE8 /* dbcmskeys.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = dbcmskeys.db; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02AD826720B13A68009AB9C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02154A66231CD63C00A33EAA /* GoogleMobileAds.framework in Frameworks */,
+				02C713E424B42EA0001BE663 /* MSMobilecore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02AD827120B13A68009AB9C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02AD827520B13A68009AB9C3 /* MSFeatureLifeLogger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02585B5F21B39D6D00AC1ACF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02C713E324B42EA0001BE663 /* MSMobilecore.framework */,
+				02154A65231CD63C00A33EAA /* GoogleMobileAds.framework */,
+				02585B6B21B3A33700AC1ACF /* MSMobilecore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0260D4DA21D9CCF900BBDE9D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0260D4DB21D9CF7900BBDE9D /* MSLifeLoggerCatagory.h */,
+				0260D4DC21D9CF7900BBDE9D /* MSLifeLoggerCatagory.m */,
+				0260D4DF21DAC0B300BBDE9D /* MSLifeLoggerLogEntry.h */,
+				0260D4E021DAC0B300BBDE9D /* MSLifeLoggerLogEntry.m */,
+				0260D4E321DAC0EB00BBDE9D /* MSLifeLoggerLogEntryData.h */,
+				0260D4E421DAC0EB00BBDE9D /* MSLifeLoggerLogEntryData.m */,
+				026BC69F22272F5600D41046 /* MSLifeLoggerUserSettings.h */,
+				026BC6A022272F5600D41046 /* MSLifeLoggerUserSettings.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		02990134235D095E00B8DDFA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0299013B235D0A8300B8DDFA /* About */,
+				0299013C235D0A9400B8DDFA /* AddEvent */,
+				0299013E235D0AC400B8DDFA /* CenterView */,
+				0299013A235D0A6800B8DDFA /* ChangeCatagory */,
+				02990139235D0A4C00B8DDFA /* ChangeOrder */,
+				02990136235D09FA00B8DDFA /* EditCatagory */,
+				02990137235D0A1700B8DDFA /* ExportLog */,
+				0299013D235D0AAC00B8DDFA /* Options */,
+				02990138235D0A2C00B8DDFA /* RightViewContoller */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		02990135235D096D00B8DDFA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0299013F235D0B4100B8DDFA /* Generic */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		02990136235D09FA00B8DDFA /* EditCatagory */ = {
+			isa = PBXGroup;
+			children = (
+				02990141235D0B7000B8DDFA /* Cell */,
+				029900DE235D092900B8DDFA /* MSLifeLoggerEditCatagoryViewController.h */,
+				029900FA235D092A00B8DDFA /* MSLifeLoggerEditCatagoryViewController.m */,
+			);
+			name = EditCatagory;
+			sourceTree = "<group>";
+		};
+		02990137235D0A1700B8DDFA /* ExportLog */ = {
+			isa = PBXGroup;
+			children = (
+				029900EE235D092A00B8DDFA /* MSLifeLoggerExportLogViewController.h */,
+				029900DC235D092900B8DDFA /* MSLifeLoggerExportLogViewController.m */,
+			);
+			name = ExportLog;
+			sourceTree = "<group>";
+		};
+		02990138235D0A2C00B8DDFA /* RightViewContoller */ = {
+			isa = PBXGroup;
+			children = (
+				02990148235D11CE00B8DDFA /* MSLifeLoggerLeftViewController.h */,
+				02990147235D11CE00B8DDFA /* MSLifeLoggerLeftViewController.m */,
+			);
+			name = RightViewContoller;
+			sourceTree = "<group>";
+		};
+		02990139235D0A4C00B8DDFA /* ChangeOrder */ = {
+			isa = PBXGroup;
+			children = (
+				029900E6235D092900B8DDFA /* MSMobileChangeCatagoryOrderViewController.h */,
+				029900F4235D092A00B8DDFA /* MSMobileChangeCatagoryOrderViewController.m */,
+			);
+			name = ChangeOrder;
+			sourceTree = "<group>";
+		};
+		0299013A235D0A6800B8DDFA /* ChangeCatagory */ = {
+			isa = PBXGroup;
+			children = (
+				029900DD235D092900B8DDFA /* MSMobileChangeCatagoryViewController.h */,
+				029900DB235D092900B8DDFA /* MSMobileChangeCatagoryViewController.m */,
+			);
+			name = ChangeCatagory;
+			sourceTree = "<group>";
+		};
+		0299013B235D0A8300B8DDFA /* About */ = {
+			isa = PBXGroup;
+			children = (
+				02990143235D0BBF00B8DDFA /* Cell */,
+				029900DA235D092900B8DDFA /* MSLifeLoggerAboutViewController.h */,
+				029900E9235D092A00B8DDFA /* MSLifeLoggerAboutViewController.m */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		0299013C235D0A9400B8DDFA /* AddEvent */ = {
+			isa = PBXGroup;
+			children = (
+				029900EB235D092A00B8DDFA /* MSLifeLoggerAddEventViewController.h */,
+				029900E0235D092900B8DDFA /* MSLifeLoggerAddEventViewController.m */,
+			);
+			name = AddEvent;
+			sourceTree = "<group>";
+		};
+		0299013D235D0AAC00B8DDFA /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				029900D8235D092900B8DDFA /* MSLifeLoggerCatagoryOptionsViewController.h */,
+				02990101235D092A00B8DDFA /* MSLifeLoggerCatagoryOptionsViewController.m */,
+			);
+			name = Options;
+			sourceTree = "<group>";
+		};
+		0299013E235D0AC400B8DDFA /* CenterView */ = {
+			isa = PBXGroup;
+			children = (
+				02990144235D0BD100B8DDFA /* Cell */,
+				029900EC235D092A00B8DDFA /* MSLifeLoggerCenterViewController.h */,
+				029900E7235D092A00B8DDFA /* MSLifeLoggerCenterViewController.m */,
+			);
+			name = CenterView;
+			sourceTree = "<group>";
+		};
+		0299013F235D0B4100B8DDFA /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				02990145235D0C0700B8DDFA /* Spacing */,
+				02990142235D0B8E00B8DDFA /* Header */,
+				02990140235D0B5500B8DDFA /* TextView */,
+			);
+			name = Generic;
+			sourceTree = "<group>";
+		};
+		02990140235D0B5500B8DDFA /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				029900FF235D092A00B8DDFA /* TextViewTableViewCell.h */,
+				02990100235D092A00B8DDFA /* TextViewTableViewCell.m */,
+				02990103235D092B00B8DDFA /* TextViewTableViewCell.xib */,
+			);
+			name = TextView;
+			sourceTree = "<group>";
+		};
+		02990141235D0B7000B8DDFA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				029900F7235D092A00B8DDFA /* MSLifeLoggerEditCatagoryTableViewCell.h */,
+				029900F6235D092A00B8DDFA /* MSLifeLoggerEditCatagoryTableViewCell.m */,
+				029900DF235D092900B8DDFA /* MSLifeLoggerEditCatagoryTableViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		02990142235D0B8E00B8DDFA /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				029900E4235D092900B8DDFA /* HeaderTableViewCell.h */,
+				029900FC235D092A00B8DDFA /* HeaderTableViewCell.m */,
+				029900F9235D092A00B8DDFA /* HeaderTableViewCell.xib */,
+			);
+			name = Header;
+			sourceTree = "<group>";
+		};
+		02990143235D0BBF00B8DDFA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				029900E5235D092900B8DDFA /* MSLifeLoggerAboutTableViewCell.h */,
+				029900ED235D092A00B8DDFA /* MSLifeLoggerAboutTableViewCell.m */,
+				029900EA235D092A00B8DDFA /* MSLifeLoggerAboutTableViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		02990144235D0BD100B8DDFA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				029900E3235D092900B8DDFA /* CenterTableViewCell.h */,
+				029900FE235D092A00B8DDFA /* CenterTableViewCell.m */,
+				029900D9235D092900B8DDFA /* CenterTableViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		02990145235D0C0700B8DDFA /* Spacing */ = {
+			isa = PBXGroup;
+			children = (
+				029900E1235D092900B8DDFA /* SpacingTableViewCell.h */,
+				029900F2235D092A00B8DDFA /* SpacingTableViewCell.m */,
+				029900F3235D092A00B8DDFA /* SpacingTableViewCell.xib */,
+			);
+			name = Spacing;
+			sourceTree = "<group>";
+		};
+		0299014B235D1C7500B8DDFA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				02990146235D107600B8DDFA /* MSFeatureLifeLoggerScreens.h */,
+				02585B6521B3A01E00AC1ACF /* MSFeatureLifeLogger.m */,
+				02AD826E20B13A68009AB9C3 /* MSFeatureLifeLogger.h */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		0299014C235D1C8D00B8DDFA /* support */ = {
+			isa = PBXGroup;
+			children = (
+				0260D4D321D8969B00BBDE9D /* UIColor+Hex.m */,
+				02F2D7FD21C6D58900E3ABE8 /* MSFeatureCMKeys.h */,
+				02AD826F20B13A68009AB9C3 /* Info.plist */,
+				0260D4CF21D8955700BBDE9D /* MSFeatureLifeLoggerVisualSpec.h */,
+				029900D7235D092900B8DDFA /* MSTableViewCellDelgates.h */,
+				0260D4D421D8969B00BBDE9D /* UIColor+Hex.h */,
+				02F2D7FE21C6D58900E3ABE8 /* MSFeatureCMKeys.m */,
+				026BC6A72227EC4700D41046 /* MSFeatureLifeLoggerVisualSpec.m */,
+			);
+			name = support;
+			sourceTree = "<group>";
+		};
+		0299014D235D1CA000B8DDFA /* db */ = {
+			isa = PBXGroup;
+			children = (
+				02585BA421BCAB4800AC1ACF /* MasterDB.plist */,
+				02F2D80321C6DD4A00E3ABE8 /* dbcmskeys.db */,
+			);
+			name = db;
+			sourceTree = "<group>";
+		};
+		02AD826120B13A68009AB9C3 = {
+			isa = PBXGroup;
+			children = (
+				02585B5F21B39D6D00AC1ACF /* Frameworks */,
+				02AD826D20B13A68009AB9C3 /* MSFeatureLifeLogger */,
+				02AD827820B13A68009AB9C3 /* MSFeatureLifeLoggerTests */,
+				02AD826C20B13A68009AB9C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02AD826C20B13A68009AB9C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02AD826B20B13A68009AB9C3 /* MSFeatureLifeLogger.framework */,
+				02AD827420B13A68009AB9C3 /* MSFeatureLifeLoggerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02AD826D20B13A68009AB9C3 /* MSFeatureLifeLogger */ = {
+			isa = PBXGroup;
+			children = (
+				02990135235D096D00B8DDFA /* Cell */,
+				02990134235D095E00B8DDFA /* Controller */,
+				0299014D235D1CA000B8DDFA /* db */,
+				0299014B235D1C7500B8DDFA /* Main */,
+				0260D4DA21D9CCF900BBDE9D /* model */,
+				0299014C235D1C8D00B8DDFA /* support */,
+			);
+			path = MSFeatureLifeLogger;
+			sourceTree = "<group>";
+		};
+		02AD827820B13A68009AB9C3 /* MSFeatureLifeLoggerTests */ = {
+			isa = PBXGroup;
+			children = (
+				02AD827920B13A68009AB9C3 /* MSFeatureLifeLoggerTests.m */,
+				02AD827B20B13A68009AB9C3 /* Info.plist */,
+			);
+			path = MSFeatureLifeLoggerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		02AD826820B13A68009AB9C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026BC6A122272F5600D41046 /* MSLifeLoggerUserSettings.h in Headers */,
+				0260D4D621D8969B00BBDE9D /* UIColor+Hex.h in Headers */,
+				0299012D235D092B00B8DDFA /* TextViewTableViewCell.h in Headers */,
+				0299010F235D092B00B8DDFA /* SpacingTableViewCell.h in Headers */,
+				02AD827C20B13A68009AB9C3 /* MSFeatureLifeLogger.h in Headers */,
+				02990108235D092B00B8DDFA /* MSLifeLoggerAboutViewController.h in Headers */,
+				02990113235D092B00B8DDFA /* MSLifeLoggerAboutTableViewCell.h in Headers */,
+				0260D4DD21D9CF7900BBDE9D /* MSLifeLoggerCatagory.h in Headers */,
+				0299014A235D11CE00B8DDFA /* MSLifeLoggerLeftViewController.h in Headers */,
+				02990106235D092B00B8DDFA /* MSLifeLoggerCatagoryOptionsViewController.h in Headers */,
+				02990125235D092B00B8DDFA /* MSLifeLoggerEditCatagoryTableViewCell.h in Headers */,
+				02990119235D092B00B8DDFA /* MSLifeLoggerAddEventViewController.h in Headers */,
+				02990112235D092B00B8DDFA /* HeaderTableViewCell.h in Headers */,
+				0260D4E121DAC0B300BBDE9D /* MSLifeLoggerLogEntry.h in Headers */,
+				02990114235D092B00B8DDFA /* MSMobileChangeCatagoryOrderViewController.h in Headers */,
+				0299011C235D092B00B8DDFA /* MSLifeLoggerExportLogViewController.h in Headers */,
+				02990111235D092B00B8DDFA /* CenterTableViewCell.h in Headers */,
+				02990105235D092B00B8DDFA /* MSTableViewCellDelgates.h in Headers */,
+				0299010C235D092B00B8DDFA /* MSLifeLoggerEditCatagoryViewController.h in Headers */,
+				0260D4D121D8955700BBDE9D /* MSFeatureLifeLoggerVisualSpec.h in Headers */,
+				0260D4E521DAC0EB00BBDE9D /* MSLifeLoggerLogEntryData.h in Headers */,
+				0299011A235D092B00B8DDFA /* MSLifeLoggerCenterViewController.h in Headers */,
+				02F2D7FF21C6D58900E3ABE8 /* MSFeatureCMKeys.h in Headers */,
+				0299010B235D092B00B8DDFA /* MSMobileChangeCatagoryViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		02AD826A20B13A68009AB9C3 /* MSFeatureLifeLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02AD827F20B13A68009AB9C3 /* Build configuration list for PBXNativeTarget "MSFeatureLifeLogger" */;
+			buildPhases = (
+				02AD826620B13A68009AB9C3 /* Sources */,
+				02AD826720B13A68009AB9C3 /* Frameworks */,
+				02AD826820B13A68009AB9C3 /* Headers */,
+				02AD826920B13A68009AB9C3 /* Resources */,
+				02585B6A21B3A2ED00AC1ACF /* CopyFiles */,
+				02C713E624B42EA0001BE663 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MSFeatureLifeLogger;
+			productName = MSFeatureLifeLogger;
+			productReference = 02AD826B20B13A68009AB9C3 /* MSFeatureLifeLogger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		02AD827320B13A68009AB9C3 /* MSFeatureLifeLoggerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02AD828220B13A68009AB9C3 /* Build configuration list for PBXNativeTarget "MSFeatureLifeLoggerTests" */;
+			buildPhases = (
+				02AD827020B13A68009AB9C3 /* Sources */,
+				02AD827120B13A68009AB9C3 /* Frameworks */,
+				02AD827220B13A68009AB9C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02AD827720B13A68009AB9C3 /* PBXTargetDependency */,
+			);
+			name = MSFeatureLifeLoggerTests;
+			productName = MSFeatureLifeLoggerTests;
+			productReference = 02AD827420B13A68009AB9C3 /* MSFeatureLifeLoggerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02AD826220B13A68009AB9C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = mulvsoft;
+				TargetAttributes = {
+					02AD826A20B13A68009AB9C3 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					02AD827320B13A68009AB9C3 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 02AD826520B13A68009AB9C3 /* Build configuration list for PBXProject "MSFeatureLifeLogger" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02AD826120B13A68009AB9C3;
+			productRefGroup = 02AD826C20B13A68009AB9C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02AD826A20B13A68009AB9C3 /* MSFeatureLifeLogger */,
+				02AD827320B13A68009AB9C3 /* MSFeatureLifeLoggerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02AD826920B13A68009AB9C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02585BA521BCAB4800AC1ACF /* MasterDB.plist in Resources */,
+				02990131235D092B00B8DDFA /* TextViewTableViewCell.xib in Resources */,
+				0299010D235D092B00B8DDFA /* MSLifeLoggerEditCatagoryTableViewCell.xib in Resources */,
+				02990107235D092B00B8DDFA /* CenterTableViewCell.xib in Resources */,
+				02990121235D092B00B8DDFA /* SpacingTableViewCell.xib in Resources */,
+				02990127235D092B00B8DDFA /* HeaderTableViewCell.xib in Resources */,
+				02F2D80421C6DD4A00E3ABE8 /* dbcmskeys.db in Resources */,
+				02990118235D092B00B8DDFA /* MSLifeLoggerAboutTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02AD827220B13A68009AB9C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02AD826620B13A68009AB9C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02990149235D11CE00B8DDFA /* MSLifeLoggerLeftViewController.m in Sources */,
+				02990117235D092B00B8DDFA /* MSLifeLoggerAboutViewController.m in Sources */,
+				0260D4E221DAC0B300BBDE9D /* MSLifeLoggerLogEntry.m in Sources */,
+				0260D4D521D8969B00BBDE9D /* UIColor+Hex.m in Sources */,
+				02990124235D092B00B8DDFA /* MSLifeLoggerEditCatagoryTableViewCell.m in Sources */,
+				0260D4E621DAC0EB00BBDE9D /* MSLifeLoggerLogEntryData.m in Sources */,
+				0299012E235D092B00B8DDFA /* TextViewTableViewCell.m in Sources */,
+				0299010E235D092B00B8DDFA /* MSLifeLoggerAddEventViewController.m in Sources */,
+				02990109235D092B00B8DDFA /* MSMobileChangeCatagoryViewController.m in Sources */,
+				0299012F235D092B00B8DDFA /* MSLifeLoggerCatagoryOptionsViewController.m in Sources */,
+				0260D4DE21D9CF7900BBDE9D /* MSLifeLoggerCatagory.m in Sources */,
+				026BC6A222272F5600D41046 /* MSLifeLoggerUserSettings.m in Sources */,
+				026BC6A82227EC4700D41046 /* MSFeatureLifeLoggerVisualSpec.m in Sources */,
+				02990120235D092B00B8DDFA /* SpacingTableViewCell.m in Sources */,
+				02F2D80021C6D58900E3ABE8 /* MSFeatureCMKeys.m in Sources */,
+				02990122235D092B00B8DDFA /* MSMobileChangeCatagoryOrderViewController.m in Sources */,
+				02990115235D092B00B8DDFA /* MSLifeLoggerCenterViewController.m in Sources */,
+				0299012A235D092B00B8DDFA /* HeaderTableViewCell.m in Sources */,
+				02585B6621B3A01E00AC1ACF /* MSFeatureLifeLogger.m in Sources */,
+				02990128235D092B00B8DDFA /* MSLifeLoggerEditCatagoryViewController.m in Sources */,
+				0299012C235D092B00B8DDFA /* CenterTableViewCell.m in Sources */,
+				0299011B235D092B00B8DDFA /* MSLifeLoggerAboutTableViewCell.m in Sources */,
+				0299010A235D092B00B8DDFA /* MSLifeLoggerExportLogViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02AD827020B13A68009AB9C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02AD827A20B13A68009AB9C3 /* MSFeatureLifeLoggerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02AD827720B13A68009AB9C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02AD826A20B13A68009AB9C3 /* MSFeatureLifeLogger */;
+			targetProxy = 02AD827620B13A68009AB9C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02AD827D20B13A68009AB9C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		02AD827E20B13A68009AB9C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		02AD828020B13A68009AB9C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YR37Y2UVNX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/MSFeatureLifeLogger";
+				INFOPLIST_FILE = MSFeatureLifeLogger/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mulvsoft.MSFeatureLifeLogger;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_UIKITFORMAC = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02AD828120B13A68009AB9C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YR37Y2UVNX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/MSFeatureLifeLogger";
+				INFOPLIST_FILE = MSFeatureLifeLogger/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mulvsoft.MSFeatureLifeLogger;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_UIKITFORMAC = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		02AD828320B13A68009AB9C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YR37Y2UVNX;
+				INFOPLIST_FILE = MSFeatureLifeLoggerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mulvsoft.MSFeatureLifeLoggerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02AD828420B13A68009AB9C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YR37Y2UVNX;
+				INFOPLIST_FILE = MSFeatureLifeLoggerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mulvsoft.MSFeatureLifeLoggerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02AD826520B13A68009AB9C3 /* Build configuration list for PBXProject "MSFeatureLifeLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02AD827D20B13A68009AB9C3 /* Debug */,
+				02AD827E20B13A68009AB9C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02AD827F20B13A68009AB9C3 /* Build configuration list for PBXNativeTarget "MSFeatureLifeLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02AD828020B13A68009AB9C3 /* Debug */,
+				02AD828120B13A68009AB9C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02AD828220B13A68009AB9C3 /* Build configuration list for PBXNativeTarget "MSFeatureLifeLoggerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02AD828320B13A68009AB9C3 /* Debug */,
+				02AD828420B13A68009AB9C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02AD826220B13A68009AB9C3 /* Project object */;
+}

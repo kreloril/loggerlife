@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dbService</key>
+	<array>
+		<dict>
+			<key>dbModelClass</key>
+			<string>catagory</string>
+			<key>dbQueryCreate</key>
+			<string>CREATE TABLE `catagory` ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,`name` TEXT);</string>
+			<key>dbQuerySelect</key>
+			<array>
+				<string>select * from &apos;catagory&apos; order by name</string>
+				<string>select count(id) from catagory</string>
+				<string>select * from catagory where name like &apos;{$1}&apos;</string>
+			</array>
+			<key>dbQueryDelete</key>
+			<array>
+				<string>DELETE from `catagory` where `id` = &apos;{$1}&apos;</string>
+			</array>
+			<key>dbQueryUpdate</key>
+			<array>
+				<string>UPDATE `catagory` SET `name`=&apos;{$1}&apos;, `data` = &apos;{$2}&apos;  WHERE `id` =&apos;{$3}&apos;;</string>
+				<string>UPDATE  `logentry` SET `ownerid` = &apos;{$1}&apos; where  ownerid = &apos;{$2}&apos;</string>
+			</array>
+			<key>dbQueryInsert</key>
+			<array>
+				<string>INSERT INTO `catagory`(`name`,`data`) VALUES (&apos;{$1}&apos;,&apos;{$2}&apos;)</string>
+			</array>
+			<key>dbQueryAlter</key>
+			<array>
+				<string>ALTER TABLE `catagory` ADD COLUMN `data` TEXT default &apos;{&quot;allowad&quot;:&quot;1&quot;,&quot;sortingorder&quot;:&quot;-1&quot;,&quot;issecure&quot;:&quot;0&quot;}&apos;</string>
+			</array>
+		</dict>
+		<dict>
+			<key>dbModelClass</key>
+			<string>logentry</string>
+			<key>dbQueryCreate</key>
+			<string>CREATE TABLE `logentry` (`id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,`ownerid` INTEGER NOT NULL,`data` TEXT, `timestamp` TEXT );</string>
+			<key>dbQuerySelect</key>
+			<array>
+				<string>select id from `logentry` where timestamp = &apos;{$1}&apos;</string>
+				<string>select * from `logentry` where `ownerid` = {$1}</string>
+				<string>select logentrydata.ownerid from logentry INNER JOIN logentrydata ON logentrydata.ownerid == logentry.id where logentry.ownerid = {$1}</string>
+			</array>
+			<key>dbQueryDelete</key>
+			<array>
+				<string>DELETE  from `logentry` where `id` = &apos;{$1}&apos;</string>
+			</array>
+			<key>dbQueryUpdate</key>
+			<array>
+				<string>UPDATE `logentry` SET `timestamp`=&apos;{$1}&apos;, `data` = &apos;{$3}&apos; , `ownerid` = &apos;{$4}&apos; WHERE `id` =&apos;{$2}&apos;;</string>
+			</array>
+			<key>dbQueryInsert</key>
+			<array>
+				<string>INSERT INTO `logentry`(`ownerid`,`data`,`timestamp`) VALUES ({$1},&apos;{$2}&apos;,&apos;{$3}&apos;);</string>
+			</array>
+			<key>dbQueryAlter</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>dbModelClass</key>
+			<string>logentrydata</string>
+			<key>dbQueryCreate</key>
+			<string>CREATE TABLE `logentrydata` (`id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,`ownerid`	INTEGER,`logEntryType`	TEXT,`logEntryData`	TEXT);</string>
+			<key>dbQuerySelect</key>
+			<array>
+				<string>select * from `logentrydata` where `ownerid` = {$1}</string>
+			</array>
+			<key>dbQueryDelete</key>
+			<array>
+				<string>DELETE from `logentrydata` where `id` = &apos;{$1}&apos;</string>
+				<string>DELETE from `logentrydata` where `ownerid` = &apos;{$1}&apos;</string>
+			</array>
+			<key>dbQueryUpdate</key>
+			<array>
+				<string>UPDATE `logentrydata` SET `logEntryData`=&apos;{$1}&apos; WHERE id =&apos;{$2}&apos;</string>
+			</array>
+			<key>dbQueryInsert</key>
+			<array>
+				<string>INSERT INTO `logentrydata` (`ownerid`,`logEntryType`,`logEntryData`) VALUES ({$1},{$2},&apos;{$3}&apos;);</string>
+			</array>
+			<key>dbQueryAlter</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,811 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		023C71FA24CA45BC00409BB8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 023C71F924CA45BC00409BB8 /* CoreGraphics.framework */; };
+		023C71FC24CA45C300409BB8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 023C71FB24CA45C300409BB8 /* CoreTelephony.framework */; };
+		023C71FE24CA45E100409BB8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 023C71FD24CA45E100409BB8 /* CFNetwork.framework */; };
+		023C720024CA45E700409BB8 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 023C71FF24CA45E700409BB8 /* CoreText.framework */; };
+		023C720224CA45F200409BB8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 023C720124CA45F200409BB8 /* Security.framework */; };
+		023C720324CA460700409BB8 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EF816224B885BE0093ADBC /* libsqlite3.0.tbd */; };
+		023C720524CA460F00409BB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 023C720424CA460F00409BB8 /* Foundation.framework */; };
+		023C720724CA461600409BB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 023C720624CA461600409BB8 /* UIKit.framework */; };
+		028E68AA24B87A7B00C771FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68A924B87A7B00C771FC /* AppDelegate.m */; };
+		028E68AD24B87A7B00C771FC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68AC24B87A7B00C771FC /* SceneDelegate.m */; };
+		028E68B024B87A7B00C771FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68AF24B87A7B00C771FC /* ViewController.m */; };
+		028E68B324B87A7B00C771FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 028E68B124B87A7B00C771FC /* Main.storyboard */; };
+		028E68B524B87A7D00C771FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 028E68B424B87A7D00C771FC /* Assets.xcassets */; };
+		028E68B824B87A7D00C771FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 028E68B624B87A7D00C771FC /* LaunchScreen.storyboard */; };
+		028E68BB24B87A7D00C771FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68BA24B87A7D00C771FC /* main.m */; };
+		028E68FB24B87EF600C771FC /* MSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68D624B87EF400C771FC /* MSTableView.m */; };
+		028E68FC24B87EF600C771FC /* MSContentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68D824B87EF500C771FC /* MSContentManager.m */; };
+		028E68FD24B87EF600C771FC /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68D924B87EF500C771FC /* MMDrawerController.m */; };
+		028E68FE24B87EF600C771FC /* MSDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68DA24B87EF500C771FC /* MSDatabaseManager.m */; };
+		028E68FF24B87EF600C771FC /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68DD24B87EF500C771FC /* MMDrawerVisualState.m */; };
+		028E690024B87EF600C771FC /* MSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68DE24B87EF500C771FC /* MSLogger.m */; };
+		028E690124B87EF600C771FC /* MSMobileCoreBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68E024B87EF500C771FC /* MSMobileCoreBaseViewController.m */; };
+		028E690224B87EF600C771FC /* MSDatabaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68E124B87EF500C771FC /* MSDatabaseService.m */; };
+		028E690324B87EF600C771FC /* MSSychronizedMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68E324B87EF500C771FC /* MSSychronizedMutableDictionary.m */; };
+		028E690424B87EF600C771FC /* MSMobleCoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68E724B87EF500C771FC /* MSMobleCoreTableViewController.m */; };
+		028E690524B87EF600C771FC /* MSAESEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68E924B87EF500C771FC /* MSAESEncryptor.m */; };
+		028E690624B87EF600C771FC /* MSMobileCoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68ED24B87EF500C771FC /* MSMobileCoreTableViewCell.m */; };
+		028E690724B87EF600C771FC /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68EE24B87EF500C771FC /* MMDrawerBarButtonItem.m */; };
+		028E690824B87EF600C771FC /* MSDBQueryResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68F024B87EF500C771FC /* MSDBQueryResponse.m */; };
+		028E690924B87EF600C771FC /* MSMobileCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68F424B87EF600C771FC /* MSMobileCore.m */; };
+		028E690A24B87EF600C771FC /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68F724B87EF600C771FC /* UIViewController+MMDrawerController.m */; };
+		028E690B24B87EF600C771FC /* MSDBQueryBuild.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68F924B87EF600C771FC /* MSDBQueryBuild.m */; };
+		028E690C24B87EF600C771FC /* MSObjectStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E68FA24B87EF600C771FC /* MSObjectStack.m */; };
+		02C4CA6824D687E2001CAE8B /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C4CA6624D687E2001CAE8B /* GoogleAppMeasurement.framework */; };
+		02C4CA6A24D687E2001CAE8B /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C4CA6724D687E2001CAE8B /* GoogleMobileAds.framework */; };
+		02C4CA6E24D68939001CAE8B /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C4CA6D24D68939001CAE8B /* GoogleUtilities.xcframework */; };
+		02C4CA7124D69805001CAE8B /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C4CA7024D69805001CAE8B /* nanopb.xcframework */; };
+		02C4CA7424D69813001CAE8B /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C4CA7324D69813001CAE8B /* PromisesObjC.xcframework */; };
+		02EF814324B8820B0093ADBC /* MSLifeLoggerEditCatagoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF810C24B882090093ADBC /* MSLifeLoggerEditCatagoryViewController.m */; };
+		02EF814424B8820B0093ADBC /* MSLifeLoggerCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF811024B882090093ADBC /* MSLifeLoggerCenterViewController.m */; };
+		02EF814524B8820B0093ADBC /* MSLifeLoggerLogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF811124B882090093ADBC /* MSLifeLoggerLogEntry.m */; };
+		02EF814624B8820B0093ADBC /* MSLifeLoggerCatagoryOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF811324B882090093ADBC /* MSLifeLoggerCatagoryOptionsViewController.m */; };
+		02EF814724B8820B0093ADBC /* MSLifeLoggerEditCatagoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF811724B8820A0093ADBC /* MSLifeLoggerEditCatagoryTableViewCell.m */; };
+		02EF814824B8820B0093ADBC /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02EF811824B8820A0093ADBC /* HeaderTableViewCell.xib */; };
+		02EF814924B8820B0093ADBC /* dbcmskeys.db in Resources */ = {isa = PBXBuildFile; fileRef = 02EF811924B8820A0093ADBC /* dbcmskeys.db */; };
+		02EF814A24B8820B0093ADBC /* SpacingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF811A24B8820A0093ADBC /* SpacingTableViewCell.m */; };
+		02EF814B24B8820B0093ADBC /* TextViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF811B24B8820A0093ADBC /* TextViewTableViewCell.m */; };
+		02EF814C24B8820B0093ADBC /* SpacingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02EF811C24B8820A0093ADBC /* SpacingTableViewCell.xib */; };
+		02EF814D24B8820B0093ADBC /* MSLifeLoggerAddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF811D24B8820A0093ADBC /* MSLifeLoggerAddEventViewController.m */; };
+		02EF814E24B8820B0093ADBC /* MSLifeLoggerUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF811E24B8820A0093ADBC /* MSLifeLoggerUserSettings.m */; };
+		02EF814F24B8820B0093ADBC /* MSLifeLoggerLogEntryData.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF811F24B8820A0093ADBC /* MSLifeLoggerLogEntryData.m */; };
+		02EF815024B8820B0093ADBC /* TextViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02EF812024B8820A0093ADBC /* TextViewTableViewCell.xib */; };
+		02EF815124B8820B0093ADBC /* HeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF812424B8820A0093ADBC /* HeaderTableViewCell.m */; };
+		02EF815224B8820B0093ADBC /* MSLifeLoggerEditCatagoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02EF812824B8820A0093ADBC /* MSLifeLoggerEditCatagoryTableViewCell.xib */; };
+		02EF815324B8820B0093ADBC /* MSLifeLoggerCatagory.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF812A24B8820A0093ADBC /* MSLifeLoggerCatagory.m */; };
+		02EF815424B8820B0093ADBC /* MSLifeLoggerAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF812B24B8820A0093ADBC /* MSLifeLoggerAboutViewController.m */; };
+		02EF815524B8820B0093ADBC /* CenterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF812C24B8820A0093ADBC /* CenterTableViewCell.m */; };
+		02EF815624B8820B0093ADBC /* MSLifeLoggerExportLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF812D24B8820A0093ADBC /* MSLifeLoggerExportLogViewController.m */; };
+		02EF815724B8820B0093ADBC /* MSFeatureLifeLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF812E24B8820A0093ADBC /* MSFeatureLifeLogger.m */; };
+		02EF815824B8820B0093ADBC /* MSLifeLoggerAboutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02EF813024B8820A0093ADBC /* MSLifeLoggerAboutTableViewCell.xib */; };
+		02EF815924B8820B0093ADBC /* MSFeatureCMKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF813124B8820A0093ADBC /* MSFeatureCMKeys.m */; };
+		02EF815A24B8820B0093ADBC /* MSLifeLoggerAboutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF813624B8820A0093ADBC /* MSLifeLoggerAboutTableViewCell.m */; };
+		02EF815B24B8820B0093ADBC /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF813724B8820A0093ADBC /* UIColor+Hex.m */; };
+		02EF815C24B8820B0093ADBC /* MSMobileChangeCatagoryOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF813824B8820B0093ADBC /* MSMobileChangeCatagoryOrderViewController.m */; };
+		02EF815D24B8820B0093ADBC /* CenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02EF813924B8820B0093ADBC /* CenterTableViewCell.xib */; };
+		02EF815E24B8820B0093ADBC /* MSMobileChangeCatagoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF813A24B8820B0093ADBC /* MSMobileChangeCatagoryViewController.m */; };
+		02EF815F24B8820B0093ADBC /* MSFeatureLifeLoggerVisualSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF813C24B8820B0093ADBC /* MSFeatureLifeLoggerVisualSpec.m */; };
+		02EF816024B8820B0093ADBC /* MasterDB.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02EF813D24B8820B0093ADBC /* MasterDB.plist */; };
+		02EF816124B8820B0093ADBC /* MSLifeLoggerLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EF814224B8820B0093ADBC /* MSLifeLoggerLeftViewController.m */; };
+		02EF816424B885D90093ADBC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EF816324B885D90093ADBC /* QuartzCore.framework */; };
+		02EF816624B887290093ADBC /* cmdbinfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02EF816524B887290093ADBC /* cmdbinfo.plist */; };
+		D77958A324DF3C8F007549F6 /* MSLifeLoggerSortingIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = D77958A224DF3C8F007549F6 /* MSLifeLoggerSortingIndex.m */; };
+		D77958AC24DFC33F007549F6 /* MSFeatureScreenBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D77958AB24DFC33F007549F6 /* MSFeatureScreenBuilder.m */; };
+		D77958AF24DFD1A4007549F6 /* MSFeatureDateFormatting.m in Sources */ = {isa = PBXBuildFile; fileRef = D77958AE24DFD1A4007549F6 /* MSFeatureDateFormatting.m */; };
+		D77958B224E05FA2007549F6 /* MSFeatureDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D77958B124E05FA2007549F6 /* MSFeatureDatabase.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		023C71F924CA45BC00409BB8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		023C71FB24CA45C300409BB8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		023C71FD24CA45E100409BB8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		023C71FF24CA45E700409BB8 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		023C720124CA45F200409BB8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		023C720424CA460F00409BB8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		023C720624CA461600409BB8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		028E68A524B87A7B00C771FC /* LoggerLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoggerLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		028E68A824B87A7B00C771FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		028E68A924B87A7B00C771FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		028E68AB24B87A7B00C771FC /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		028E68AC24B87A7B00C771FC /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		028E68AE24B87A7B00C771FC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		028E68AF24B87A7B00C771FC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		028E68B224B87A7B00C771FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		028E68B424B87A7D00C771FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		028E68B724B87A7D00C771FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		028E68B924B87A7D00C771FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		028E68BA24B87A7D00C771FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		028E68D524B87EF400C771FC /* MSContentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSContentManager.h; path = LoggerLife/MSMobilecore/src/MSContentManager.h; sourceTree = "<group>"; };
+		028E68D624B87EF400C771FC /* MSTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSTableView.m; path = LoggerLife/MSMobilecore/src/MSTableView.m; sourceTree = "<group>"; };
+		028E68D724B87EF400C771FC /* MSDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSDatabaseManager.h; path = LoggerLife/MSMobilecore/src/MSDatabaseManager.h; sourceTree = "<group>"; };
+		028E68D824B87EF500C771FC /* MSContentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSContentManager.m; path = LoggerLife/MSMobilecore/src/MSContentManager.m; sourceTree = "<group>"; };
+		028E68D924B87EF500C771FC /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawerController.m; path = LoggerLife/MSMobilecore/src/MMDrawerController.m; sourceTree = "<group>"; };
+		028E68DA24B87EF500C771FC /* MSDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSDatabaseManager.m; path = LoggerLife/MSMobilecore/src/MSDatabaseManager.m; sourceTree = "<group>"; };
+		028E68DB24B87EF500C771FC /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MMDrawerController+Subclass.h"; path = "LoggerLife/MSMobilecore/src/MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		028E68DC24B87EF500C771FC /* MSTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSTableView.h; path = LoggerLife/MSMobilecore/src/MSTableView.h; sourceTree = "<group>"; };
+		028E68DD24B87EF500C771FC /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawerVisualState.m; path = LoggerLife/MSMobilecore/src/MMDrawerVisualState.m; sourceTree = "<group>"; };
+		028E68DE24B87EF500C771FC /* MSLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLogger.m; path = LoggerLife/MSMobilecore/src/MSLogger.m; sourceTree = "<group>"; };
+		028E68DF24B87EF500C771FC /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerController.h; path = LoggerLife/MSMobilecore/src/MMDrawerController.h; sourceTree = "<group>"; };
+		028E68E024B87EF500C771FC /* MSMobileCoreBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSMobileCoreBaseViewController.m; path = LoggerLife/MSMobilecore/src/MSMobileCoreBaseViewController.m; sourceTree = "<group>"; };
+		028E68E124B87EF500C771FC /* MSDatabaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSDatabaseService.m; path = LoggerLife/MSMobilecore/src/MSDatabaseService.m; sourceTree = "<group>"; };
+		028E68E224B87EF500C771FC /* MSMobileCoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSMobileCoreTableViewCell.h; path = LoggerLife/MSMobilecore/src/MSMobileCoreTableViewCell.h; sourceTree = "<group>"; };
+		028E68E324B87EF500C771FC /* MSSychronizedMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSSychronizedMutableDictionary.m; path = LoggerLife/MSMobilecore/src/MSSychronizedMutableDictionary.m; sourceTree = "<group>"; };
+		028E68E424B87EF500C771FC /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MMDrawerController.h"; path = "LoggerLife/MSMobilecore/src/UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		028E68E624B87EF500C771FC /* MSDBQueryBuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSDBQueryBuild.h; path = LoggerLife/MSMobilecore/src/MSDBQueryBuild.h; sourceTree = "<group>"; };
+		028E68E724B87EF500C771FC /* MSMobleCoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSMobleCoreTableViewController.m; path = LoggerLife/MSMobilecore/src/MSMobleCoreTableViewController.m; sourceTree = "<group>"; };
+		028E68E824B87EF500C771FC /* MSLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLogger.h; path = LoggerLife/MSMobilecore/src/MSLogger.h; sourceTree = "<group>"; };
+		028E68E924B87EF500C771FC /* MSAESEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSAESEncryptor.m; path = LoggerLife/MSMobilecore/src/MSAESEncryptor.m; sourceTree = "<group>"; };
+		028E68EA24B87EF500C771FC /* MSDatabaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSDatabaseService.h; path = LoggerLife/MSMobilecore/src/MSDatabaseService.h; sourceTree = "<group>"; };
+		028E68EB24B87EF500C771FC /* MSMobileCoreBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSMobileCoreBaseViewController.h; path = LoggerLife/MSMobilecore/src/MSMobileCoreBaseViewController.h; sourceTree = "<group>"; };
+		028E68EC24B87EF500C771FC /* MSDBQueryResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSDBQueryResponse.h; path = LoggerLife/MSMobilecore/src/MSDBQueryResponse.h; sourceTree = "<group>"; };
+		028E68ED24B87EF500C771FC /* MSMobileCoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSMobileCoreTableViewCell.m; path = LoggerLife/MSMobilecore/src/MSMobileCoreTableViewCell.m; sourceTree = "<group>"; };
+		028E68EE24B87EF500C771FC /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawerBarButtonItem.m; path = LoggerLife/MSMobilecore/src/MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		028E68EF24B87EF500C771FC /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerBarButtonItem.h; path = LoggerLife/MSMobilecore/src/MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		028E68F024B87EF500C771FC /* MSDBQueryResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSDBQueryResponse.m; path = LoggerLife/MSMobilecore/src/MSDBQueryResponse.m; sourceTree = "<group>"; };
+		028E68F124B87EF500C771FC /* MSObjectStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSObjectStack.h; path = LoggerLife/MSMobilecore/src/MSObjectStack.h; sourceTree = "<group>"; };
+		028E68F224B87EF600C771FC /* MSAESEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSAESEncryptor.h; path = LoggerLife/MSMobilecore/src/MSAESEncryptor.h; sourceTree = "<group>"; };
+		028E68F324B87EF600C771FC /* MSMobleCoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSMobleCoreTableViewController.h; path = LoggerLife/MSMobilecore/src/MSMobleCoreTableViewController.h; sourceTree = "<group>"; };
+		028E68F424B87EF600C771FC /* MSMobileCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSMobileCore.m; path = LoggerLife/MSMobilecore/src/MSMobileCore.m; sourceTree = "<group>"; };
+		028E68F524B87EF600C771FC /* MSMobileCoreResourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSMobileCoreResourceDelegate.h; path = LoggerLife/MSMobilecore/src/MSMobileCoreResourceDelegate.h; sourceTree = "<group>"; };
+		028E68F624B87EF600C771FC /* MSSychronizedMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSSychronizedMutableDictionary.h; path = LoggerLife/MSMobilecore/src/MSSychronizedMutableDictionary.h; sourceTree = "<group>"; };
+		028E68F724B87EF600C771FC /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MMDrawerController.m"; path = "LoggerLife/MSMobilecore/src/UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		028E68F824B87EF600C771FC /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerVisualState.h; path = LoggerLife/MSMobilecore/src/MMDrawerVisualState.h; sourceTree = "<group>"; };
+		028E68F924B87EF600C771FC /* MSDBQueryBuild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSDBQueryBuild.m; path = LoggerLife/MSMobilecore/src/MSDBQueryBuild.m; sourceTree = "<group>"; };
+		028E68FA24B87EF600C771FC /* MSObjectStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSObjectStack.m; path = LoggerLife/MSMobilecore/src/MSObjectStack.m; sourceTree = "<group>"; };
+		02C4CA6624D687E2001CAE8B /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = LoggerLife/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
+		02C4CA6724D687E2001CAE8B /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = LoggerLife/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		02C4CA6D24D68939001CAE8B /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleUtilities.xcframework; path = LoggerLife/GoogleUtilities.xcframework; sourceTree = "<group>"; };
+		02C4CA7024D69805001CAE8B /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = nanopb.xcframework; path = LoggerLife/nanopb.xcframework; sourceTree = "<group>"; };
+		02C4CA7324D69813001CAE8B /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PromisesObjC.xcframework; path = LoggerLife/PromisesObjC.xcframework; sourceTree = "<group>"; };
+		02EF810924B880320093ADBC /* MSMobileCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSMobileCore.h; path = LoggerLife/MSMobilecore/src/MSMobileCore.h; sourceTree = "<group>"; };
+		02EF810B24B882090093ADBC /* MSFeatureLifeLoggerVisualSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSFeatureLifeLoggerVisualSpec.h; path = LoggerLife/MSFeatureLifeLogger/src/MSFeatureLifeLoggerVisualSpec.h; sourceTree = "<group>"; };
+		02EF810C24B882090093ADBC /* MSLifeLoggerEditCatagoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerEditCatagoryViewController.m; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerEditCatagoryViewController.m; sourceTree = "<group>"; };
+		02EF810D24B882090093ADBC /* MSLifeLoggerExportLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerExportLogViewController.h; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerExportLogViewController.h; sourceTree = "<group>"; };
+		02EF810E24B882090093ADBC /* MSLifeLoggerAddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerAddEventViewController.h; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerAddEventViewController.h; sourceTree = "<group>"; };
+		02EF810F24B882090093ADBC /* MSLifeLoggerLogEntryData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerLogEntryData.h; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerLogEntryData.h; sourceTree = "<group>"; };
+		02EF811024B882090093ADBC /* MSLifeLoggerCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerCenterViewController.m; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerCenterViewController.m; sourceTree = "<group>"; };
+		02EF811124B882090093ADBC /* MSLifeLoggerLogEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerLogEntry.m; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerLogEntry.m; sourceTree = "<group>"; };
+		02EF811224B882090093ADBC /* CenterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CenterTableViewCell.h; path = LoggerLife/MSFeatureLifeLogger/src/CenterTableViewCell.h; sourceTree = "<group>"; };
+		02EF811324B882090093ADBC /* MSLifeLoggerCatagoryOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerCatagoryOptionsViewController.m; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerCatagoryOptionsViewController.m; sourceTree = "<group>"; };
+		02EF811424B882090093ADBC /* MSFeatureLifeLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSFeatureLifeLogger.h; path = LoggerLife/MSFeatureLifeLogger/src/MSFeatureLifeLogger.h; sourceTree = "<group>"; };
+		02EF811524B882090093ADBC /* MSLifeLoggerCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerCenterViewController.h; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerCenterViewController.h; sourceTree = "<group>"; };
+		02EF811624B882090093ADBC /* MSMobileChangeCatagoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSMobileChangeCatagoryViewController.h; path = LoggerLife/MSFeatureLifeLogger/src/MSMobileChangeCatagoryViewController.h; sourceTree = "<group>"; };
+		02EF811724B8820A0093ADBC /* MSLifeLoggerEditCatagoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerEditCatagoryTableViewCell.m; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerEditCatagoryTableViewCell.m; sourceTree = "<group>"; };
+		02EF811824B8820A0093ADBC /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderTableViewCell.xib; path = LoggerLife/MSFeatureLifeLogger/src/HeaderTableViewCell.xib; sourceTree = "<group>"; };
+		02EF811924B8820A0093ADBC /* dbcmskeys.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = dbcmskeys.db; path = LoggerLife/MSFeatureLifeLogger/src/dbcmskeys.db; sourceTree = "<group>"; };
+		02EF811A24B8820A0093ADBC /* SpacingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpacingTableViewCell.m; path = LoggerLife/MSFeatureLifeLogger/src/SpacingTableViewCell.m; sourceTree = "<group>"; };
+		02EF811B24B8820A0093ADBC /* TextViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextViewTableViewCell.m; path = LoggerLife/MSFeatureLifeLogger/src/TextViewTableViewCell.m; sourceTree = "<group>"; };
+		02EF811C24B8820A0093ADBC /* SpacingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SpacingTableViewCell.xib; path = LoggerLife/MSFeatureLifeLogger/src/SpacingTableViewCell.xib; sourceTree = "<group>"; };
+		02EF811D24B8820A0093ADBC /* MSLifeLoggerAddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerAddEventViewController.m; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerAddEventViewController.m; sourceTree = "<group>"; };
+		02EF811E24B8820A0093ADBC /* MSLifeLoggerUserSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerUserSettings.m; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerUserSettings.m; sourceTree = "<group>"; };
+		02EF811F24B8820A0093ADBC /* MSLifeLoggerLogEntryData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerLogEntryData.m; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerLogEntryData.m; sourceTree = "<group>"; };
+		02EF812024B8820A0093ADBC /* TextViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TextViewTableViewCell.xib; path = LoggerLife/MSFeatureLifeLogger/src/TextViewTableViewCell.xib; sourceTree = "<group>"; };
+		02EF812124B8820A0093ADBC /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "LoggerLife/MSFeatureLifeLogger/src/UIColor+Hex.h"; sourceTree = "<group>"; };
+		02EF812224B8820A0093ADBC /* MSLifeLoggerCatagoryOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerCatagoryOptionsViewController.h; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerCatagoryOptionsViewController.h; sourceTree = "<group>"; };
+		02EF812324B8820A0093ADBC /* MSLifeLoggerLogEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerLogEntry.h; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerLogEntry.h; sourceTree = "<group>"; };
+		02EF812424B8820A0093ADBC /* HeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderTableViewCell.m; path = LoggerLife/MSFeatureLifeLogger/src/HeaderTableViewCell.m; sourceTree = "<group>"; };
+		02EF812524B8820A0093ADBC /* HeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderTableViewCell.h; path = LoggerLife/MSFeatureLifeLogger/src/HeaderTableViewCell.h; sourceTree = "<group>"; };
+		02EF812624B8820A0093ADBC /* MSFeatureCMKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSFeatureCMKeys.h; path = LoggerLife/MSFeatureLifeLogger/src/MSFeatureCMKeys.h; sourceTree = "<group>"; };
+		02EF812724B8820A0093ADBC /* MSLifeLoggerEditCatagoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerEditCatagoryViewController.h; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerEditCatagoryViewController.h; sourceTree = "<group>"; };
+		02EF812824B8820A0093ADBC /* MSLifeLoggerEditCatagoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSLifeLoggerEditCatagoryTableViewCell.xib; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerEditCatagoryTableViewCell.xib; sourceTree = "<group>"; };
+		02EF812924B8820A0093ADBC /* MSLifeLoggerAboutTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerAboutTableViewCell.h; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerAboutTableViewCell.h; sourceTree = "<group>"; };
+		02EF812A24B8820A0093ADBC /* MSLifeLoggerCatagory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerCatagory.m; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerCatagory.m; sourceTree = "<group>"; };
+		02EF812B24B8820A0093ADBC /* MSLifeLoggerAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerAboutViewController.m; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerAboutViewController.m; sourceTree = "<group>"; };
+		02EF812C24B8820A0093ADBC /* CenterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CenterTableViewCell.m; path = LoggerLife/MSFeatureLifeLogger/src/CenterTableViewCell.m; sourceTree = "<group>"; };
+		02EF812D24B8820A0093ADBC /* MSLifeLoggerExportLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerExportLogViewController.m; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerExportLogViewController.m; sourceTree = "<group>"; };
+		02EF812E24B8820A0093ADBC /* MSFeatureLifeLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSFeatureLifeLogger.m; path = LoggerLife/MSFeatureLifeLogger/src/MSFeatureLifeLogger.m; sourceTree = "<group>"; };
+		02EF812F24B8820A0093ADBC /* TextViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextViewTableViewCell.h; path = LoggerLife/MSFeatureLifeLogger/src/TextViewTableViewCell.h; sourceTree = "<group>"; };
+		02EF813024B8820A0093ADBC /* MSLifeLoggerAboutTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSLifeLoggerAboutTableViewCell.xib; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerAboutTableViewCell.xib; sourceTree = "<group>"; };
+		02EF813124B8820A0093ADBC /* MSFeatureCMKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSFeatureCMKeys.m; path = LoggerLife/MSFeatureLifeLogger/src/MSFeatureCMKeys.m; sourceTree = "<group>"; };
+		02EF813224B8820A0093ADBC /* SpacingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpacingTableViewCell.h; path = LoggerLife/MSFeatureLifeLogger/src/SpacingTableViewCell.h; sourceTree = "<group>"; };
+		02EF813324B8820A0093ADBC /* MSMobileChangeCatagoryOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSMobileChangeCatagoryOrderViewController.h; path = LoggerLife/MSFeatureLifeLogger/src/MSMobileChangeCatagoryOrderViewController.h; sourceTree = "<group>"; };
+		02EF813424B8820A0093ADBC /* MSTableViewCellDelgates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSTableViewCellDelgates.h; path = LoggerLife/MSFeatureLifeLogger/src/MSTableViewCellDelgates.h; sourceTree = "<group>"; };
+		02EF813524B8820A0093ADBC /* MSLifeLoggerEditCatagoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerEditCatagoryTableViewCell.h; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerEditCatagoryTableViewCell.h; sourceTree = "<group>"; };
+		02EF813624B8820A0093ADBC /* MSLifeLoggerAboutTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerAboutTableViewCell.m; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerAboutTableViewCell.m; sourceTree = "<group>"; };
+		02EF813724B8820A0093ADBC /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Hex.m"; path = "LoggerLife/MSFeatureLifeLogger/src/UIColor+Hex.m"; sourceTree = "<group>"; };
+		02EF813824B8820B0093ADBC /* MSMobileChangeCatagoryOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSMobileChangeCatagoryOrderViewController.m; path = LoggerLife/MSFeatureLifeLogger/src/MSMobileChangeCatagoryOrderViewController.m; sourceTree = "<group>"; };
+		02EF813924B8820B0093ADBC /* CenterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CenterTableViewCell.xib; path = LoggerLife/MSFeatureLifeLogger/src/CenterTableViewCell.xib; sourceTree = "<group>"; };
+		02EF813A24B8820B0093ADBC /* MSMobileChangeCatagoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSMobileChangeCatagoryViewController.m; path = LoggerLife/MSFeatureLifeLogger/src/MSMobileChangeCatagoryViewController.m; sourceTree = "<group>"; };
+		02EF813B24B8820B0093ADBC /* MSLifeLoggerLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerLeftViewController.h; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerLeftViewController.h; sourceTree = "<group>"; };
+		02EF813C24B8820B0093ADBC /* MSFeatureLifeLoggerVisualSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSFeatureLifeLoggerVisualSpec.m; path = LoggerLife/MSFeatureLifeLogger/src/MSFeatureLifeLoggerVisualSpec.m; sourceTree = "<group>"; };
+		02EF813D24B8820B0093ADBC /* MasterDB.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MasterDB.plist; path = LoggerLife/MSFeatureLifeLogger/src/MasterDB.plist; sourceTree = "<group>"; };
+		02EF813E24B8820B0093ADBC /* MSLifeLoggerUserSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerUserSettings.h; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerUserSettings.h; sourceTree = "<group>"; };
+		02EF813F24B8820B0093ADBC /* MSFeatureLifeLoggerScreens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSFeatureLifeLoggerScreens.h; path = LoggerLife/MSFeatureLifeLogger/src/MSFeatureLifeLoggerScreens.h; sourceTree = "<group>"; };
+		02EF814024B8820B0093ADBC /* MSLifeLoggerAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerAboutViewController.h; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerAboutViewController.h; sourceTree = "<group>"; };
+		02EF814124B8820B0093ADBC /* MSLifeLoggerCatagory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerCatagory.h; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerCatagory.h; sourceTree = "<group>"; };
+		02EF814224B8820B0093ADBC /* MSLifeLoggerLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerLeftViewController.m; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerLeftViewController.m; sourceTree = "<group>"; };
+		02EF816224B885BE0093ADBC /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		02EF816324B885D90093ADBC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		02EF816524B887290093ADBC /* cmdbinfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = cmdbinfo.plist; path = LoggerLife/MSMobilecore/src/cmdbinfo.plist; sourceTree = "<group>"; };
+		02EF816724B888E20093ADBC /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = LoggerLife/MSFeatureLifeLogger/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		D77958A124DF3C8F007549F6 /* MSLifeLoggerSortingIndex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MSLifeLoggerSortingIndex.h; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerSortingIndex.h; sourceTree = "<group>"; };
+		D77958A224DF3C8F007549F6 /* MSLifeLoggerSortingIndex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MSLifeLoggerSortingIndex.m; path = LoggerLife/MSFeatureLifeLogger/src/MSLifeLoggerSortingIndex.m; sourceTree = "<group>"; };
+		D77958A424DF40F8007549F6 /* LoggerLife.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoggerLife.entitlements; sourceTree = "<group>"; };
+		D77958AA24DFC33F007549F6 /* MSFeatureScreenBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MSFeatureScreenBuilder.h; path = LoggerLife/MSFeatureLifeLogger/src/MSFeatureScreenBuilder.h; sourceTree = "<group>"; };
+		D77958AB24DFC33F007549F6 /* MSFeatureScreenBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MSFeatureScreenBuilder.m; path = LoggerLife/MSFeatureLifeLogger/src/MSFeatureScreenBuilder.m; sourceTree = "<group>"; };
+		D77958AD24DFD1A4007549F6 /* MSFeatureDateFormatting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MSFeatureDateFormatting.h; path = LoggerLife/MSFeatureLifeLogger/src/MSFeatureDateFormatting.h; sourceTree = "<group>"; };
+		D77958AE24DFD1A4007549F6 /* MSFeatureDateFormatting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MSFeatureDateFormatting.m; path = LoggerLife/MSFeatureLifeLogger/src/MSFeatureDateFormatting.m; sourceTree = "<group>"; };
+		D77958B024E05FA2007549F6 /* MSFeatureDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MSFeatureDatabase.h; path = LoggerLife/MSFeatureLifeLogger/src/MSFeatureDatabase.h; sourceTree = "<group>"; };
+		D77958B124E05FA2007549F6 /* MSFeatureDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MSFeatureDatabase.m; path = LoggerLife/MSFeatureLifeLogger/src/MSFeatureDatabase.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		028E68A224B87A7B00C771FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				023C71FA24CA45BC00409BB8 /* CoreGraphics.framework in Frameworks */,
+				023C720724CA461600409BB8 /* UIKit.framework in Frameworks */,
+				02C4CA6824D687E2001CAE8B /* GoogleAppMeasurement.framework in Frameworks */,
+				02C4CA7424D69813001CAE8B /* PromisesObjC.xcframework in Frameworks */,
+				02C4CA6A24D687E2001CAE8B /* GoogleMobileAds.framework in Frameworks */,
+				02C4CA7124D69805001CAE8B /* nanopb.xcframework in Frameworks */,
+				023C71FC24CA45C300409BB8 /* CoreTelephony.framework in Frameworks */,
+				023C720024CA45E700409BB8 /* CoreText.framework in Frameworks */,
+				023C71FE24CA45E100409BB8 /* CFNetwork.framework in Frameworks */,
+				023C720224CA45F200409BB8 /* Security.framework in Frameworks */,
+				02EF816424B885D90093ADBC /* QuartzCore.framework in Frameworks */,
+				023C720324CA460700409BB8 /* libsqlite3.0.tbd in Frameworks */,
+				023C720524CA460F00409BB8 /* Foundation.framework in Frameworks */,
+				02C4CA6E24D68939001CAE8B /* GoogleUtilities.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		028E689C24B87A7B00C771FC = {
+			isa = PBXGroup;
+			children = (
+				02EF810A24B881060093ADBC /* Feature */,
+				028E68C624B87C7700C771FC /* Core */,
+				028E68A724B87A7B00C771FC /* LoggerLife */,
+				028E68A624B87A7B00C771FC /* Products */,
+				028E68C124B87C4B00C771FC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		028E68A624B87A7B00C771FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				028E68A524B87A7B00C771FC /* LoggerLife.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		028E68A724B87A7B00C771FC /* LoggerLife */ = {
+			isa = PBXGroup;
+			children = (
+				D77958A424DF40F8007549F6 /* LoggerLife.entitlements */,
+				028E68A824B87A7B00C771FC /* AppDelegate.h */,
+				028E68A924B87A7B00C771FC /* AppDelegate.m */,
+				028E68AB24B87A7B00C771FC /* SceneDelegate.h */,
+				028E68AC24B87A7B00C771FC /* SceneDelegate.m */,
+				028E68AE24B87A7B00C771FC /* ViewController.h */,
+				028E68AF24B87A7B00C771FC /* ViewController.m */,
+				028E68B124B87A7B00C771FC /* Main.storyboard */,
+				028E68B424B87A7D00C771FC /* Assets.xcassets */,
+				028E68B624B87A7D00C771FC /* LaunchScreen.storyboard */,
+				028E68B924B87A7D00C771FC /* Info.plist */,
+				028E68BA24B87A7D00C771FC /* main.m */,
+			);
+			path = LoggerLife;
+			sourceTree = "<group>";
+		};
+		028E68C124B87C4B00C771FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02C4CA7324D69813001CAE8B /* PromisesObjC.xcframework */,
+				02C4CA7024D69805001CAE8B /* nanopb.xcframework */,
+				02C4CA6D24D68939001CAE8B /* GoogleUtilities.xcframework */,
+				02C4CA6624D687E2001CAE8B /* GoogleAppMeasurement.framework */,
+				02C4CA6724D687E2001CAE8B /* GoogleMobileAds.framework */,
+				023C720624CA461600409BB8 /* UIKit.framework */,
+				023C720424CA460F00409BB8 /* Foundation.framework */,
+				023C720124CA45F200409BB8 /* Security.framework */,
+				023C71FF24CA45E700409BB8 /* CoreText.framework */,
+				023C71FD24CA45E100409BB8 /* CFNetwork.framework */,
+				023C71FB24CA45C300409BB8 /* CoreTelephony.framework */,
+				023C71F924CA45BC00409BB8 /* CoreGraphics.framework */,
+				02EF816724B888E20093ADBC /* GoogleMobileAds.framework */,
+				02EF816324B885D90093ADBC /* QuartzCore.framework */,
+				02EF816224B885BE0093ADBC /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		028E68C624B87C7700C771FC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				02EF816524B887290093ADBC /* cmdbinfo.plist */,
+				028E68EF24B87EF500C771FC /* MMDrawerBarButtonItem.h */,
+				028E68EE24B87EF500C771FC /* MMDrawerBarButtonItem.m */,
+				028E68DF24B87EF500C771FC /* MMDrawerController.h */,
+				028E68D924B87EF500C771FC /* MMDrawerController.m */,
+				028E68DB24B87EF500C771FC /* MMDrawerController+Subclass.h */,
+				028E68F824B87EF600C771FC /* MMDrawerVisualState.h */,
+				028E68DD24B87EF500C771FC /* MMDrawerVisualState.m */,
+				028E68F224B87EF600C771FC /* MSAESEncryptor.h */,
+				028E68E924B87EF500C771FC /* MSAESEncryptor.m */,
+				028E68D524B87EF400C771FC /* MSContentManager.h */,
+				028E68D824B87EF500C771FC /* MSContentManager.m */,
+				028E68D724B87EF400C771FC /* MSDatabaseManager.h */,
+				028E68DA24B87EF500C771FC /* MSDatabaseManager.m */,
+				028E68EA24B87EF500C771FC /* MSDatabaseService.h */,
+				028E68E124B87EF500C771FC /* MSDatabaseService.m */,
+				028E68E624B87EF500C771FC /* MSDBQueryBuild.h */,
+				028E68F924B87EF600C771FC /* MSDBQueryBuild.m */,
+				028E68EC24B87EF500C771FC /* MSDBQueryResponse.h */,
+				028E68F024B87EF500C771FC /* MSDBQueryResponse.m */,
+				028E68E824B87EF500C771FC /* MSLogger.h */,
+				028E68DE24B87EF500C771FC /* MSLogger.m */,
+				02EF810924B880320093ADBC /* MSMobileCore.h */,
+				028E68F424B87EF600C771FC /* MSMobileCore.m */,
+				028E68EB24B87EF500C771FC /* MSMobileCoreBaseViewController.h */,
+				028E68E024B87EF500C771FC /* MSMobileCoreBaseViewController.m */,
+				028E68F524B87EF600C771FC /* MSMobileCoreResourceDelegate.h */,
+				028E68E224B87EF500C771FC /* MSMobileCoreTableViewCell.h */,
+				028E68ED24B87EF500C771FC /* MSMobileCoreTableViewCell.m */,
+				028E68F324B87EF600C771FC /* MSMobleCoreTableViewController.h */,
+				028E68E724B87EF500C771FC /* MSMobleCoreTableViewController.m */,
+				028E68F124B87EF500C771FC /* MSObjectStack.h */,
+				028E68FA24B87EF600C771FC /* MSObjectStack.m */,
+				028E68F624B87EF600C771FC /* MSSychronizedMutableDictionary.h */,
+				028E68E324B87EF500C771FC /* MSSychronizedMutableDictionary.m */,
+				028E68DC24B87EF500C771FC /* MSTableView.h */,
+				028E68D624B87EF400C771FC /* MSTableView.m */,
+				028E68E424B87EF500C771FC /* UIViewController+MMDrawerController.h */,
+				028E68F724B87EF600C771FC /* UIViewController+MMDrawerController.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		02EF810A24B881060093ADBC /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				D77958A924DFB206007549F6 /* db */,
+				D77958A624DFB0A9007549F6 /* Cells */,
+				D77958A824DFB122007549F6 /* Model */,
+				D77958A724DFB0D9007549F6 /* Utils */,
+				D77958A524DFB094007549F6 /* ViewControllers */,
+			);
+			name = Feature;
+			sourceTree = "<group>";
+		};
+		D77958A524DFB094007549F6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				02EF813F24B8820B0093ADBC /* MSFeatureLifeLoggerScreens.h */,
+				02EF814024B8820B0093ADBC /* MSLifeLoggerAboutViewController.h */,
+				02EF812B24B8820A0093ADBC /* MSLifeLoggerAboutViewController.m */,
+				02EF810E24B882090093ADBC /* MSLifeLoggerAddEventViewController.h */,
+				02EF811D24B8820A0093ADBC /* MSLifeLoggerAddEventViewController.m */,
+				02EF812224B8820A0093ADBC /* MSLifeLoggerCatagoryOptionsViewController.h */,
+				02EF811324B882090093ADBC /* MSLifeLoggerCatagoryOptionsViewController.m */,
+				02EF811524B882090093ADBC /* MSLifeLoggerCenterViewController.h */,
+				02EF811024B882090093ADBC /* MSLifeLoggerCenterViewController.m */,
+				02EF812724B8820A0093ADBC /* MSLifeLoggerEditCatagoryViewController.h */,
+				02EF810C24B882090093ADBC /* MSLifeLoggerEditCatagoryViewController.m */,
+				02EF810D24B882090093ADBC /* MSLifeLoggerExportLogViewController.h */,
+				02EF812D24B8820A0093ADBC /* MSLifeLoggerExportLogViewController.m */,
+				02EF813B24B8820B0093ADBC /* MSLifeLoggerLeftViewController.h */,
+				02EF814224B8820B0093ADBC /* MSLifeLoggerLeftViewController.m */,
+				02EF813324B8820A0093ADBC /* MSMobileChangeCatagoryOrderViewController.h */,
+				02EF813824B8820B0093ADBC /* MSMobileChangeCatagoryOrderViewController.m */,
+				02EF811624B882090093ADBC /* MSMobileChangeCatagoryViewController.h */,
+				02EF813A24B8820B0093ADBC /* MSMobileChangeCatagoryViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D77958A624DFB0A9007549F6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				02EF811224B882090093ADBC /* CenterTableViewCell.h */,
+				02EF812C24B8820A0093ADBC /* CenterTableViewCell.m */,
+				02EF813924B8820B0093ADBC /* CenterTableViewCell.xib */,
+				02EF812524B8820A0093ADBC /* HeaderTableViewCell.h */,
+				02EF812424B8820A0093ADBC /* HeaderTableViewCell.m */,
+				02EF811824B8820A0093ADBC /* HeaderTableViewCell.xib */,
+				02EF812924B8820A0093ADBC /* MSLifeLoggerAboutTableViewCell.h */,
+				02EF813624B8820A0093ADBC /* MSLifeLoggerAboutTableViewCell.m */,
+				02EF813024B8820A0093ADBC /* MSLifeLoggerAboutTableViewCell.xib */,
+				02EF813524B8820A0093ADBC /* MSLifeLoggerEditCatagoryTableViewCell.h */,
+				02EF811724B8820A0093ADBC /* MSLifeLoggerEditCatagoryTableViewCell.m */,
+				02EF812824B8820A0093ADBC /* MSLifeLoggerEditCatagoryTableViewCell.xib */,
+				02EF813224B8820A0093ADBC /* SpacingTableViewCell.h */,
+				02EF811A24B8820A0093ADBC /* SpacingTableViewCell.m */,
+				02EF811C24B8820A0093ADBC /* SpacingTableViewCell.xib */,
+				02EF812F24B8820A0093ADBC /* TextViewTableViewCell.h */,
+				02EF811B24B8820A0093ADBC /* TextViewTableViewCell.m */,
+				02EF812024B8820A0093ADBC /* TextViewTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		D77958A724DFB0D9007549F6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				02EF811424B882090093ADBC /* MSFeatureLifeLogger.h */,
+				02EF812E24B8820A0093ADBC /* MSFeatureLifeLogger.m */,
+				02EF812624B8820A0093ADBC /* MSFeatureCMKeys.h */,
+				02EF813124B8820A0093ADBC /* MSFeatureCMKeys.m */,
+				02EF810B24B882090093ADBC /* MSFeatureLifeLoggerVisualSpec.h */,
+				02EF813C24B8820B0093ADBC /* MSFeatureLifeLoggerVisualSpec.m */,
+				02EF813E24B8820B0093ADBC /* MSLifeLoggerUserSettings.h */,
+				02EF811E24B8820A0093ADBC /* MSLifeLoggerUserSettings.m */,
+				02EF813424B8820A0093ADBC /* MSTableViewCellDelgates.h */,
+				02EF812124B8820A0093ADBC /* UIColor+Hex.h */,
+				02EF813724B8820A0093ADBC /* UIColor+Hex.m */,
+				D77958AA24DFC33F007549F6 /* MSFeatureScreenBuilder.h */,
+				D77958AB24DFC33F007549F6 /* MSFeatureScreenBuilder.m */,
+				D77958AD24DFD1A4007549F6 /* MSFeatureDateFormatting.h */,
+				D77958AE24DFD1A4007549F6 /* MSFeatureDateFormatting.m */,
+				D77958B024E05FA2007549F6 /* MSFeatureDatabase.h */,
+				D77958B124E05FA2007549F6 /* MSFeatureDatabase.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		D77958A824DFB122007549F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02EF814124B8820B0093ADBC /* MSLifeLoggerCatagory.h */,
+				02EF812A24B8820A0093ADBC /* MSLifeLoggerCatagory.m */,
+				02EF812324B8820A0093ADBC /* MSLifeLoggerLogEntry.h */,
+				02EF811124B882090093ADBC /* MSLifeLoggerLogEntry.m */,
+				02EF810F24B882090093ADBC /* MSLifeLoggerLogEntryData.h */,
+				02EF811F24B8820A0093ADBC /* MSLifeLoggerLogEntryData.m */,
+				D77958A124DF3C8F007549F6 /* MSLifeLoggerSortingIndex.h */,
+				D77958A224DF3C8F007549F6 /* MSLifeLoggerSortingIndex.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D77958A924DFB206007549F6 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				02EF811924B8820A0093ADBC /* dbcmskeys.db */,
+				02EF813D24B8820B0093ADBC /* MasterDB.plist */,
+			);
+			name = db;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		028E68A424B87A7B00C771FC /* LoggerLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 028E68BE24B87A7D00C771FC /* Build configuration list for PBXNativeTarget "LoggerLife" */;
+			buildPhases = (
+				028E68A124B87A7B00C771FC /* Sources */,
+				028E68A224B87A7B00C771FC /* Frameworks */,
+				028E68A324B87A7B00C771FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoggerLife;
+			productName = LoggerLife;
+			productReference = 028E68A524B87A7B00C771FC /* LoggerLife.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		028E689D24B87A7B00C771FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1320;
+				ORGANIZATIONNAME = "John Mulvey";
+				TargetAttributes = {
+					028E68A424B87A7B00C771FC = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 028E68A024B87A7B00C771FC /* Build configuration list for PBXProject "LoggerLife" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 028E689C24B87A7B00C771FC;
+			productRefGroup = 028E68A624B87A7B00C771FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				028E68A424B87A7B00C771FC /* LoggerLife */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		028E68A324B87A7B00C771FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EF814924B8820B0093ADBC /* dbcmskeys.db in Resources */,
+				02EF814C24B8820B0093ADBC /* SpacingTableViewCell.xib in Resources */,
+				02EF814824B8820B0093ADBC /* HeaderTableViewCell.xib in Resources */,
+				028E68B824B87A7D00C771FC /* LaunchScreen.storyboard in Resources */,
+				028E68B524B87A7D00C771FC /* Assets.xcassets in Resources */,
+				02EF815224B8820B0093ADBC /* MSLifeLoggerEditCatagoryTableViewCell.xib in Resources */,
+				02EF816024B8820B0093ADBC /* MasterDB.plist in Resources */,
+				02EF815D24B8820B0093ADBC /* CenterTableViewCell.xib in Resources */,
+				02EF815824B8820B0093ADBC /* MSLifeLoggerAboutTableViewCell.xib in Resources */,
+				028E68B324B87A7B00C771FC /* Main.storyboard in Resources */,
+				02EF816624B887290093ADBC /* cmdbinfo.plist in Resources */,
+				02EF815024B8820B0093ADBC /* TextViewTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		028E68A124B87A7B00C771FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EF815724B8820B0093ADBC /* MSFeatureLifeLogger.m in Sources */,
+				02EF815B24B8820B0093ADBC /* UIColor+Hex.m in Sources */,
+				02EF815424B8820B0093ADBC /* MSLifeLoggerAboutViewController.m in Sources */,
+				028E690224B87EF600C771FC /* MSDatabaseService.m in Sources */,
+				02EF814424B8820B0093ADBC /* MSLifeLoggerCenterViewController.m in Sources */,
+				028E690824B87EF600C771FC /* MSDBQueryResponse.m in Sources */,
+				02EF814F24B8820B0093ADBC /* MSLifeLoggerLogEntryData.m in Sources */,
+				02EF815124B8820B0093ADBC /* HeaderTableViewCell.m in Sources */,
+				028E68B024B87A7B00C771FC /* ViewController.m in Sources */,
+				02EF814324B8820B0093ADBC /* MSLifeLoggerEditCatagoryViewController.m in Sources */,
+				02EF814724B8820B0093ADBC /* MSLifeLoggerEditCatagoryTableViewCell.m in Sources */,
+				028E690A24B87EF600C771FC /* UIViewController+MMDrawerController.m in Sources */,
+				028E690324B87EF600C771FC /* MSSychronizedMutableDictionary.m in Sources */,
+				02EF815F24B8820B0093ADBC /* MSFeatureLifeLoggerVisualSpec.m in Sources */,
+				02EF814524B8820B0093ADBC /* MSLifeLoggerLogEntry.m in Sources */,
+				028E690C24B87EF600C771FC /* MSObjectStack.m in Sources */,
+				028E690024B87EF600C771FC /* MSLogger.m in Sources */,
+				028E690924B87EF600C771FC /* MSMobileCore.m in Sources */,
+				02EF814624B8820B0093ADBC /* MSLifeLoggerCatagoryOptionsViewController.m in Sources */,
+				02EF814D24B8820B0093ADBC /* MSLifeLoggerAddEventViewController.m in Sources */,
+				02EF815C24B8820B0093ADBC /* MSMobileChangeCatagoryOrderViewController.m in Sources */,
+				02EF815A24B8820B0093ADBC /* MSLifeLoggerAboutTableViewCell.m in Sources */,
+				028E690B24B87EF600C771FC /* MSDBQueryBuild.m in Sources */,
+				D77958A324DF3C8F007549F6 /* MSLifeLoggerSortingIndex.m in Sources */,
+				028E68FC24B87EF600C771FC /* MSContentManager.m in Sources */,
+				028E690124B87EF600C771FC /* MSMobileCoreBaseViewController.m in Sources */,
+				028E68FD24B87EF600C771FC /* MMDrawerController.m in Sources */,
+				02EF814A24B8820B0093ADBC /* SpacingTableViewCell.m in Sources */,
+				02EF816124B8820B0093ADBC /* MSLifeLoggerLeftViewController.m in Sources */,
+				028E68FF24B87EF600C771FC /* MMDrawerVisualState.m in Sources */,
+				02EF815624B8820B0093ADBC /* MSLifeLoggerExportLogViewController.m in Sources */,
+				028E690724B87EF600C771FC /* MMDrawerBarButtonItem.m in Sources */,
+				02EF814E24B8820B0093ADBC /* MSLifeLoggerUserSettings.m in Sources */,
+				02EF815E24B8820B0093ADBC /* MSMobileChangeCatagoryViewController.m in Sources */,
+				028E68AA24B87A7B00C771FC /* AppDelegate.m in Sources */,
+				028E68BB24B87A7D00C771FC /* main.m in Sources */,
+				028E690624B87EF600C771FC /* MSMobileCoreTableViewCell.m in Sources */,
+				02EF815324B8820B0093ADBC /* MSLifeLoggerCatagory.m in Sources */,
+				D77958B224E05FA2007549F6 /* MSFeatureDatabase.m in Sources */,
+				028E68AD24B87A7B00C771FC /* SceneDelegate.m in Sources */,
+				D77958AC24DFC33F007549F6 /* MSFeatureScreenBuilder.m in Sources */,
+				02EF814B24B8820B0093ADBC /* TextViewTableViewCell.m in Sources */,
+				D77958AF24DFD1A4007549F6 /* MSFeatureDateFormatting.m in Sources */,
+				028E68FE24B87EF600C771FC /* MSDatabaseManager.m in Sources */,
+				02EF815524B8820B0093ADBC /* CenterTableViewCell.m in Sources */,
+				028E690524B87EF600C771FC /* MSAESEncryptor.m in Sources */,
+				028E690424B87EF600C771FC /* MSMobleCoreTableViewController.m in Sources */,
+				02EF815924B8820B0093ADBC /* MSFeatureCMKeys.m in Sources */,
+				028E68FB24B87EF600C771FC /* MSTableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		028E68B124B87A7B00C771FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				028E68B224B87A7B00C771FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		028E68B624B87A7D00C771FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				028E68B724B87A7D00C771FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		028E68BC24B87A7D00C771FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		028E68BD24B87A7D00C771FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		028E68BF24B87A7D00C771FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LoggerLife/LoggerLife.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YR37Y2UVNX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LoggerLife/MSFeatureLifeLogger",
+					"$(PROJECT_DIR)/LoggerLife",
+				);
+				INFOPLIST_FILE = LoggerLife/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = "-ObjC";
+				"OTHER_LDFLAGS[arch=*]" = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mulvsoft.loggerlife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		028E68C024B87A7D00C771FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LoggerLife/LoggerLife.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YR37Y2UVNX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LoggerLife/MSFeatureLifeLogger",
+					"$(PROJECT_DIR)/LoggerLife",
+				);
+				INFOPLIST_FILE = LoggerLife/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mulvsoft.loggerlife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		028E68A024B87A7B00C771FC /* Build configuration list for PBXProject "LoggerLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				028E68BC24B87A7D00C771FC /* Debug */,
+				028E68BD24B87A7D00C771FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		028E68BE24B87A7D00C771FC /* Build configuration list for PBXNativeTarget "LoggerLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				028E68BF24B87A7D00C771FC /* Debug */,
+				028E68C024B87A7D00C771FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 028E689D24B87A7B00C771FC /* Project object */;
+}
